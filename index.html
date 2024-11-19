@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Arte</title>
+<link rel="stylesheet" type="text/css" href="css.css"/>
+<link rel="stylesheet" type="text/css" href="iconos/iconos/styles.css"/>
+<style>
+    
+    
+    *{
+        
+        padding: 0px;
+    }
+    
+    
+    body{
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    header{
+        width: 100%;
+        box-shadow: 0 0 10px;
+        
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        background: #fff;
+    }
+    
+    
+    
+    /*inicio del menu*/
+    
+    nav{
+        width: 900px;
+        height: 97.4px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    
+    ul{
+        list-style: none;
+       display: flex;
+        margin: 0px;
+    }
+    ul li a {
+        background: #fff;
+        color: #000;
+        text-decoration: none;
+        padding: 10px 15px;
+        display: block;
+        font-family: arial;
+        text-transform: uppercase;
+        
+    }
+    
+    #primer_ul > li{
+        float: left;
+    }
+    
+    #ul_segundo{
+         display: flex;
+        flex-direction: column;
+    }
+    
+    
+    #primer_ul{
+        
+        width: 900px;
+        height: 97.4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+
+    
+    #primer_ul li ul{
+        display: none;
+        position: absolute;
+        min-width: 140px;
+    }
+    
+    #primer_ul li:hover > ul{
+        display: block;
+    }
+    
+    #primer_ul li ul li{
+        position: relative;
+    }
+    
+    /*fin del menu*/
+    
+    #a_de_logo{
+        width: 170px;
+        height: 42.4px;
+    }
+    
+    #a_de_logo img{
+        width: 170px;
+        height: 42.4px;
+    }
+    
+    
+    
+    #logo{
+       margin: 0px;
+    }
+    #div_inmediato_al_header{
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+        
+        height: 97px;
+        background: #fff;
+        width: 1200px;
+        margin: auto;
+    }
+    
+       
+    
+    
+    
+    
+    
+    
+    
+    #div_de_iconos_header{
+        display: flex;
+       
+        width: 120px;
+        justify-content: center;
+    }
+    
+    #div_de_iconos_header #perfil img{
+        width: 20px;
+    }
+    #div_de_iconos_header #carrito img{
+        width: 20px;
+    }
+    #perfil{
+        margin-right: 0px;
+    }
+    #guo_circulo_rojo{
+        border: 1px solid red;
+        border-radius: 40px;
+        padding: 5px 20px;
+    }
+    
+    #guo_circulo_rojo a{
+        padding: 0px;
+    }
+
+    
+    
+    #div_inmediato_de_primer_article  video{
+        width: 100%;
+        height: 100%;
+    }
+    
+    #div_azul_debajo_de_video{
+        background: #003c72;
+        width: 100%;
+        height: 194px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: -3px;
+    }
+    
+    #aprende_a_manejar{
+        color: #fff;
+        font-family: arial;
+        font-size: 30px;
+        
+    }
+    #domina_tu_camara{
+        color: #fff;
+        font-family: arial;
+        font-size: 15px;
+        margin-top: -20px;
+    }
+    
+    #boton_amarillo{
+        background: #ffb11f;
+        border: none;
+        border-radius: 30px;
+            
+    }
+    
+    #boton_amarillo p{
+        text-transform: uppercase;
+        font-size: 15px;
+        padding: 2px 15px;
+        color: #003c72;
+        font-weight: bold;
+    }
+    
+    
+    #segundo_article{
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background: #f3f3f3;
+    }
+    
+    
+    #div_inmediato_a_segundo_article{
+        display: flex;
+        justify-content: center;
+        
+    }
+    
+    
+    #bloque_tutoriales{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 555px;
+        margin: 0;
+        margin-right: 20px;
+        background: #fff;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+    
+    
+    
+    
+    #bloque_cursos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 555px;
+        margin: 0;
+         background: #fff;
+        margin-left: 20px;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+    
+    #bloque_tutoriales figure{
+        width: 555px;
+        height: 327px;
+        background: url(img/TUTORIALES-min.jpg) no-repeat ;
+        background-size: cover;
+        margin: 0;
+    }
+    
+    #bloque_cursos figure{
+        width: 555px;
+        height: 327px;
+        background: url(img/CURSOS-min.jpg) no-repeat ;
+        background-size: cover;
+        margin: 0;
+    }
+    
+    #bloque_cursos button{
+        background: #edae20;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 20px;
+        color: #3a3a3a;
+        font-family: arial;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    
+    #bloque_tutoriales button{
+        background: #edae20;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 20px;
+        color: #3a3a3a;
+        font-family: arial;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    
+    #bloque_tutoriales button:hover{
+        background: #3a3a3a;;
+        color: #fff;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+    #bloque_tutoriales button:not(:hover){
+        color: #3a3a3a;
+        background: #edae20;;
+        transition: 0.5s;
+    }
+   
+    
+    .titulos_de_tut_y_cur{
+        text-align: center;
+        font-weight: bold;
+        font-family: arial;
+        font-size: 22px;
+    }
+    
+    .texto_info_tut_y_cur{
+        text-align: center;
+        font-family: arial;
+    }
+    
+    
+   
+    #camara img{
+        width: 70px;
+    }
+    
+    
+    #cine img{
+        width:  70px;
+    }
+    
+    
+    
+    #feliz img{
+        width: 70px;
+    }
+    
+    
+    #primer_div_aprende{
+        display: flex;
+        justify-content: center;
+    }
+    
+    
+    
+    #segindo_div_de_aprende{
+        display: flex;
+        justify-content: center;
+    }
+    
+    
+    #segindo_div_de_aprende p{
+        font-size: 40px;
+        margin-left: 20px;
+        font-family: arial;
+        font-weight: bold;
+    }
+    
+    
+    #tercer_article{
+        margin-top: 60px;
+    }
+    
+    #span_azul{
+        color: #003c72;
+    }
+    
+    #span_rojo{
+        color: #f43627;
+    }
+    
+    #span_amarillo{
+        color: #ffba1f
+    }
+    
+    #span_amarillo_bosque{
+        color: #ffba1f;
+    }
+    
+    
+    
+    #cuarto_artilce{
+        width: 100%;
+        height: 390px;
+        background: url(img/bosque_verde.jpg)  no-repeat bottom;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-attachment: fixed; 
+    }
+    
+    
+    #div_inmediato_a_cuarto_article{
+        height: 190px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        
+    }
+    
+    #p_de_arboles_plantados{
+        color: #fff;
+        font-size: 30px;
+        font-weight: bold;
+        font-family: arial;
+        margin-top: -7px;
+    }
+    
+    #curso_adquirido{
+        color: #fff;
+        font-size: 15px;
+        font-family: arial;
+        margin-top: -20px;
+    }
+    
+    
+    
+    #div_inmediato_a_quinto_article{
+        display: flex;
+        justify-content: center;
+    }
+    
+    
+    
+    
+    
+    #div_de_figure_carretera_hombre img{
+        width: 317px;
+        border-radius: 158px;
+        border: solid 4px #002b6c;
+        padding: 5px;
+    }
+	span::selection{
+		background: yellow;
+	}
+	
+	p::selection{
+		background: black;
+		color: #fff
+	}
+    
+    
+    #quinto_article{
+        padding-top: 50px;
+    }
+    
+    
+    #div_de_texto_quinto_article{
+        width: 642px;
+        height:  392px;
+        font-family: arial;
+		
+    }
+    
+    
+    #div_de_texto_quinto_article button{
+        background: #003c72;
+        border-radius: 20px;
+        padding: 10px 25px 10px 25px;
+        color: #fff;
+        font-family: arial;
+        text-transform: uppercase;
+        border: none;
+        font-size: 1.1em;
+        border: 1px solid #003c72;
+    }
+    
+    
+    #div_de_texto_quinto_article button:hover{
+        background: #fff;
+        color: #003c72;
+        transition: 0.5s;
+        
+        cursor: pointer;
+    }
+    
+    #div_de_texto_quinto_article button:not(:hover){
+        background: #003c72;
+        color: #fff;
+        transition: 0.5s;
+    }
+    
+    #p_hola_lover{
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+    
+    
+    #div_inmediato_a_sexto_article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #f3f3f3;
+        padding-top: 30px;
+        height: 700px;
+    }
+    
+    
+    #div_de_esto_opinan p{
+        font-family: arial;
+        color: black;
+        font-size: 1.7em;
+    }
+    
+    
+    #div_de_comentarios{
+        width: 1120px;
+        height: 550px;
+        display: flex;
+        padding-top: 20px;
+        align-items: center;
+    }
+    
+    
+    .secciones_deslizable{
+        width: 363px;
+        height: 520px;
+        margin-left: 7.65px;
+        border-radius: 15px;
+        border: solid #999 1px;
+    }
+    
+    #primer_deslizable{
+        background: url(img/deslizable/1%C2%BA.png) center no-repeat;
+        background-size: cover;
+    }
+    
+    #segundo_deslizable{
+        background: url(img/deslizable/2%C2%BA.png) center no-repeat;
+        background-size: cover;
+    }
+    
+    
+    #tercer_deslizable{
+        background: url(img/deslizable/3%C2%BA.png) center no-repeat;
+        background-size: cover;
+    }
+    
+    
+    
+    
+    
+    #div_inmediato_a_septimo_article{
+        width: 100%;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+    
+    
+    .secciones_de_septimo_article{
+        width: 350px;
+        height:  488px;
+        margin: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #fff;
+    }
+    
+    #septimo_article{
+        background: #e1e1e1;
+        height: 700px;
+    }
+    
+    
+    .secciones_de_septimo_article button{
+        background: #ffba1f;
+        border-radius: 20px;
+        border: none;
+        font-family: arial;
+        padding: 10px 20px 10px 20px;
+        font-size: 16px;
+        color: #282828;
+        font-weight: bold;
+    }
+    
+    
+    .secciones_de_septimo_article button:hover{
+        background: #000;
+        color: #fff;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+    
+    .secciones_de_septimo_article button:not(:hover){
+        color: #000;
+        background: #ffba1f;
+        transition: 0.5s;
+    }
+    
+    #div_de_secciones_de_septimo_article{
+        width: 100%;
+        height:  498px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    #div_de_si_quieres_conocer{
+        display: flex;
+        justify-content: center;
+        font-size: 1.9em;
+        font-family: arial;
+        color: #282828;
+        padding-top: 80px;
+        margin-top: 50px;
+    }
+    
+    
+    #figure_youtube{
+        width: 350px;
+        height:  252px;
+        background: url(img/septima_seccion/uno.jpg) no-repeat ;
+        background-size: cover;
+        margin: 0;
+    }
+    
+    #figure_el_blog{
+        width: 350px;
+        height:  252px;
+        background: url(img/septima_seccion/dos.jpg) no-repeat ;
+        background-size: cover;
+        margin: 0;
+    }
+    
+    
+    #figure_el_podcast{
+        width: 350px;
+        height:  252px;
+        background: url(img/septima_seccion/tres.jpg) no-repeat ;
+        background-size: cover;
+        margin: 0;
+    }
+    
+    
+    .secciones_de_septimo_article p{
+        
+    }
+    
+    
+    .texto_de_medio_septima_seccion{
+        text-align: center;
+        font-family: arial;
+        width: 300px;
+        
+        
+    }
+    
+    .titulos_de_septima_seccion{
+        font-family: arial;
+        font-weight: bold;
+        color: #282828;
+        font-size: 1.5em;
+    }
+    
+    
+    #div_inmediato_a_octavo_article{
+        background: #ffba1f;
+        width: 100%;
+        height: 430px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    
+    
+    #div_de_figure_octavo_article figure{
+        width: 50px;
+        height: 50px;
+        background: url(img/octava_seccion/carta.png) no-repeat;
+    }
+    
+    
+    #div_de_texto_ocatva_seccion p{
+        text-align: center;
+        color: #282828;
+        font-family: arial;
+        margin-top: -10px;
+    }
+    
+    
+    
+    #div_de_titulo_octava_seccion p{
+        color: #282828;
+        font-size: 1.8em;
+        font-family: arial;
+        font-weight: bold;
+    }
+    
+    
+    #div_de_inputs input{
+        width: 500px;
+        height: 50px;
+        border: none;
+        font-family: arial;
+        padding-left: 18px;
+        border-radius: 100px;
+        font-size: 1.4em;
+    }
+    
+    
+    #primer_input_octava{
+        margin-right: 20px;
+    }
+    
+    
+    #checkbox_octava{
+        margin: 20px 0;
+        font-family: arial;
+    }
+    
+    
+    
+    #div_de_boton_octava button{
+        background: #282828;
+        border-radius: 100px;
+        color: #fff;
+
+        width: 450px;
+        height: 50px;
+        border: none;
+        font-family: arial;
+        font-size: 1.1em;
+    }
+    
+    #div_de_boton_octava button:hover{
+        color: #000;
+        background: #fff;
+        cursor: pointer;
+    }
+    
+    #div_inmediato_a_noveno{
+        width: 100%;
+        height: 100px;
+        background: #e6a81c;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.6em;
+    }
+    
+    #div_inmediato_a_noveno p{
+        width: 1120px;
+        height: 55px;
+    }
+    
+    
+    
+    
+    #div_inmediato_a_decimo_article{
+        background: #fff;
+        width: 100%;
+        height: 254px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    
+</style>
+</head>
+<body>
+
+<header>
+    <div id="div_inmediato_al_header">
+       <a id="a_de_logo" href="index.html">
+        <figure id="logo">
+            <img src="img/logotipo.png">
+        </figure>
+        </a>
+        <nav id="primer_nav">
+            <ul id="primer_ul">
+                <li style="width: 102px">
+                    <a href="cursos.html">cursos</a>
+                </li>
+                <li  style="width: 126px">
+                    <a href="sobre_rbg.html">sobre rgb</a>
+                </li>
+                <li style="width: 152px">
+                    <a href="">contenido</a>
+                    <ul id="ul_segundo">
+                        <li>
+                            <a href="tutoblogs.html">tutoblogs</a>
+                        </li>
+                        <li>
+                            <a href="podcast.html">podcast</a>
+                        </li>
+                    </ul>
+                </li>
+                <li  style="width: 152px">
+                    <a href="">mi mochila</a>
+                    <ul id="ul_tercero">
+                        <li>
+                            <a href="">edicion</a>
+                        </li>
+                        <li>
+                            <a href="">camaras y drones</a>
+                        </li>
+                        <li>
+                            <a href="">sonido e iluminacion</a>
+                        </li>
+                        <li>
+                            <a href="">accesorios</a>
+                        </li>
+                    </ul>
+                </li>
+                <li style="width: 124px">
+                    <a href="">contacto</a>
+                </li>
+                <li id="guo_circulo_rojo">
+                    <a href="">guo+</a>
+                </li>
+            </ul>
+        </nav>
+        <div id="div_de_iconos_header">
+            <figure id="perfil">
+                <img src="img/perfil.png">
+            </figure>
+            <figure id="carrito">
+                <img src="img/carrito.png">
+            </figure>
+        </div>
+    </div>
+</header>
+<article id="primer_article">
+    <div id="div_inmediato_de_primer_article">
+        <video src="video/primera_parte.mp4" autoplay=""   loop=""  type="video/mp4">
+            
+        </video>
+    </div>
+    <div id="div_azul_debajo_de_video">
+        <p id="aprende_a_manejar">
+            Aprende a manejar tu cámara al completo para vídeo y foto por 0€
+        </p>
+        <p id="domina_tu_camara">
+            Domina tu cámara para foto y vídeo con este curso gratis
+        </p>
+        <button id="boton_amarillo">
+            <p>
+                llevame al curso ahora
+            </p>
+        </button>
+    </div>
+</article>
+<article id="segundo_article">
+    <div id="div_inmediato_a_segundo_article">
+        <div id="bloque_tutoriales">
+            <figure>
+                
+            </figure>
+            <p class="titulos_de_tut_y_cur">
+                TUTORIALES GRATIS
+            </p>
+            <p class="texto_info_tut_y_cur">
+                Encontrarás más de 200 tutoriales a la carta sobre fotografía, vídeo y YouTube.
+            </p>
+            <button>
+                ver tutoriales
+            </button>
+        </div>
+        <div id="bloque_cursos">
+            <figure>
+                
+            </figure>
+            <p class="titulos_de_tut_y_cur">
+                CURSOS
+            </p>
+            <p class="texto_info_tut_y_cur">
+                Todo lo que sé sobre el mundo audiovisual y negocios online para desarrollar tus ideas y conseguir tus metas.
+            </p>
+            <button>
+                ver cusos
+            </button>
+        </div>
+    </div>
+</article>
+<article id="tercer_article">
+    <div id="div_inmediato_a_tercer_article">
+        <div id="primer_div_aprende">
+            <figure id="camara">
+                <img  src="img/camara_icono.png">
+            </figure>
+            <figure id="cine">
+                <img  src="img/cine.png">
+            </figure>
+            <figure id="feliz">
+                <img  src="img/feliz.png">
+            </figure>
+            
+        </div>
+        <div id="segindo_div_de_aprende">
+            <p>
+                <span id="span_azul">Aprende foto,</span> 
+            </p>
+            <p>
+                <span id="span_rojo">aprende vídeo,</span>
+            </p>
+            <p>
+                 <span id="span_amarillo">sé feliz.</span>
+            </p>
+        </div>
+    </div>
+</article>
+<article id="cuarto_artilce">
+    <div id="div_inmediato_a_cuarto_article">
+        <div id="div_de_figure_logo_bosque">
+            <figure>
+                <img src="img/logo_bosque.png">
+            </figure>
+        </div>
+        <p id="p_de_arboles_plantados">
+            <span id="span_amarillo_bosque">¡Más de 20.500 árboles plantados!</span> Gracias por ayudarnos a cuidar el planeta.
+        </p>
+        <p id="curso_adquirido">
+            Por cada curso adquirido en nuestra escuela plantamos un árbol en el Guobosque.
+        </p>
+    </div>
+</article>
+<article id="quinto_article">
+    <div id="div_inmediato_a_quinto_article">
+        <div id="div_de_figure_carretera_hombre">
+            <figure>
+                <img src="img/carretera_hombre.jpg">
+            </figure>
+        </div>
+        <div id="div_de_texto_quinto_article">
+            <p id="p_hola_lover">
+                ¡Hola, cámara-lover!
+            </p>
+            <p>
+                Me llamo Rubén y, si te encanta la fotografía y/o el vídeo como a mí, pero aún no has encontrado ningún sitio en el que aprender en profundidad, profesionalizarte y sacar todo tu potencial creativo… no busques más. Estás en la web correcta.😊
+            </p>
+            <p>
+                Aquí te doy todo lo que a mí me hubiese gustado tener cuando comencé, hace más de 10 años.
+            </p>
+            <p>
+                Pero lo mágico de RunbenGuo es que pasó de ser una ilusión individual a una familia. A medida que ha ido creciendo, he tenido la suerte de encontrar a personas increíbles que me ayudan día a día a poder seguir creciendo, transformando vidas y, ahora, también a expandir nuestra misión de cuidar nuestro planeta.
+            </p>
+            <p>
+                Si te apetece saber más sobre nosotros…
+            </p>
+            <button>
+                conoce nuestra historia
+            </button>
+        </div>
+    </div>
+</article>
+<article id="sexto_article">
+    <div id="div_inmediato_a_sexto_article">
+        <div id="div_de_esto_opinan">
+            <p>
+                Esto opinan algunos de los más de 800.000 miembros de la Guomunidad
+            </p>
+        </div>
+        <div id="div_de_comentarios">
+            <div id="primer_deslizable" class="secciones_deslizable">
+                
+            </div>
+            <div id="segundo_deslizable" class="secciones_deslizable">
+                
+            </div>
+            <div id="tercer_deslizable" class="secciones_deslizable">
+                
+            </div>
+        </div>
+    </div>
+</article>
+<article id="septimo_article">
+    <div id="div_inmediato_a_septimo_article">
+        <div id="div_de_si_quieres_conocer">
+            <p>
+                Si quieres conocer más de cerca lo que hago, puedes visitar…
+            </p>
+        </div>
+        <div id="div_de_secciones_de_septimo_article">
+            <div class="secciones_de_septimo_article">
+               <figure id="figure_youtube">
+                   
+               </figure>
+                <p class="titulos_de_septima_seccion">
+                    YOUTUBE
+                </p>
+                <p class="texto_de_medio_septima_seccion">
+                    Publico vídeos cargados de valor para  seguir aprendiendo en el mundo de la fotografía, el vídeo y YouTube.
+                </p>
+                <button>
+                    IR AL CANAL
+                </button>
+            </div>
+            <div class="secciones_de_septimo_article">
+               <figure id="figure_el_blog">
+                   
+               </figure>
+                <p class="titulos_de_septima_seccion">
+                    EL BLOG
+                </p>
+                <p class="texto_de_medio_septima_seccion">
+                    Publicamos cada 7 días los tutoriales que mejor han funcionado, y también reflexiones interesantes sobre fotografía.
+                </p>
+                <button>
+                    IR AL BLOG
+                </button>
+            </div>
+            <div class="secciones_de_septimo_article">
+               <figure id="figure_el_podcast">
+                   
+               </figure>
+                <p class="titulos_de_septima_seccion">
+                    EL PODCAST
+                </p>
+                <p class="texto_de_medio_septima_seccion">
+                    Un rincón íntimo donde aprenderás mientras avanzas en las actividades de tu día. Como si conversara contigo.
+                </p>
+                <button>
+                    IR AL PODCAST
+                </button>
+            </div>
+        </div>
+    </div>
+</article>
+<article id="octavo_article">
+    <div id="div_inmediato_a_octavo_article">
+        <div id="div_de_figure_octavo_article">
+            <figure>
+                
+            </figure>
+        </div>
+        <div id="div_de_titulo_octava_seccion">
+            <p>
+                ¿Quieres enterarte de todo lo que sucede en el universo RunbenGuo?
+            </p>
+        </div>
+        <div id="div_de_texto_ocatva_seccion">
+            <p>
+                ¿Y por qué no nos acompañas en nuestra Guomunidad?
+            </p>
+            <p>
+                Allí cada domingo todos seguimos aprendiendo sobre foto, vídeo y somos felices.
+            </p>
+        </div>
+        <div id="div_de_inputs">
+            <input placeholder="Tu nombre sin apellidos" id="primer_input_octava" type="text">
+            <input placeholder="Tu mejor email"  id="segundo_input_octava" type="text">
+        </div>
+        <div id="checkbox_octava">
+           <label>
+            <input type="checkbox">
+            Acepto la política de privacidad.* Saber más
+           </label>
+        </div>
+        <div id="div_de_boton_octava">
+            <button>
+                ¡ÚNETE A NUESTRA GUOMUNIDAD!
+            </button>
+        </div>
+    </div>
+</article>
+<article id="noveno_article">
+    <div id="div_inmediato_a_noveno">
+        <p>
+            *Los datos de carácter personal que nos facilites mediante este formulario serán tratados por RunbenGuo, SL, con la finalidad de enviarte nuestras publicaciones, promociones de productos y/o servicios y recursos exclusivos. Al marcar la casilla de aceptación, estás dando tu consentimiento expreso para que tus datos sean tratados conforme a las finalidades de este formulario, descritas en la política de privacidad. El hecho de no aceptarla puede tener como consecuencia el no poder atender a tu solicitud. Los datos que me facilites serán ubicados en los servidores de Active Campaign (mi proveedor de email marketing), adherido al acuerdo Privacy Shield, y cuya política de privacidad puede consultar. Podrás ejercitar los derechos de acceso, rectificación, portabilidad, supresión, limitación y oposición en info@runbenguo.com.
+        </p>
+    </div>
+</article>
+<article id="div_decimo_article">
+    <div id="div_inmediato_a_decimo_article">
+        <div id="logo_y_redes">
+           <img src="img/decima_seccion/logo_footer.png">
+           <img src="img/decima_seccion/redes.JPG"> 
+        </div>
+        <div id="copyright">
+            <p>
+                Copyright © 2019 · Runbenguo · Información Legal · Política de Cookies · Condiciones de Venta · Política de Privacidad ·
+            </p>
+        </div>
+        <iframe src="https://open.spotify.com/embed/track/0XinBYhf1X3kdvKQHOX971" width="340" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    </div>
+</article>
+</body>
+</html>

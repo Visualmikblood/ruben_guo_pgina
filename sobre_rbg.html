@@ -1,0 +1,1465 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>rbg</title>
+<link rel="stylesheet" type="text/css" href="css.css"/>
+<link rel="stylesheet" type="text/css" href="iconos/iconos/styles.css"/>
+<style>
+    
+    
+    
+    
+     /*inicio del menu*/
+    
+    nav{
+        width: 900px;
+        height: 97.4px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    
+    ul{
+        list-style: none;
+       display: flex;
+    }
+    ul li a {
+        background: #fff;
+        color: #000;
+        text-decoration: none;
+        display: block;
+        font-family: arial;
+        text-transform: uppercase;
+        padding: 10px 15px;
+    }
+    
+    #primer_ul > li{
+        float: left;
+    }
+    
+    #ul_segundo{
+         display: flex;
+        flex-direction: column;
+    }
+    
+    #primer_ul li a:hover{
+        
+    }
+    #primer_ul {
+        width: 900px;
+        height: 97.4px;
+    }
+    
+    #primer_ul li ul{
+        display: none;
+        position: absolute;
+        min-width: 140px;
+    }
+    
+    #primer_ul li:hover > ul{
+        display: block;
+    }
+    
+    #primer_ul li ul li{
+        position: relative;
+    }
+    
+    /*fin del menu*/
+    
+    
+    
+    
+    
+    
+      /*aqui comienza el reset css*/
+html,body,h1,h2,h3,h4,h5,h6,p,ol,ul,li,pre,code,address,form,fieldset,div,figure{
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    font-weight: normal;
+    border: none;
+   
+}
+ol{
+    margin-left: 1.4em;
+    list-style: decimal;
+}
+ul{
+    margin-left: 0;
+    list-style: none;
+}
+img{
+    border: 0;
+}
+
+/*aqui termina el reset css*/
+    
+    
+    
+    
+    body{
+        margin: 0;
+    }
+    
+    header{
+        width: 100%;
+        height: 97.4px;
+        box-shadow: 0 0 10px;
+        background: #fff;
+        box-shadow: 0 0 10px 0 rgba(0,0,0,.5);
+        display: flex;
+        justify-content: center;
+    }
+    
+    #logo img{
+        width: 170px;
+        height: 42.4px;
+    }
+    #logo{
+        height: 42-4px;
+        width: 170px;
+        
+       
+    }
+    #div_inmediato_al_header{
+        width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        height: 97px;
+        background: #fff;
+        z-index: 5;
+    }
+    #primer_nav ul{
+        display: flex;
+        
+        justify-content: center;
+        margin: 0;
+    }
+    #primer_nav ul li{
+        list-style: none;
+        margin-left: 0px;
+        font-family: arial;
+        text-transform: uppercase;
+    }
+    
+    #a_de_logo{
+        width: 170px;
+        height: 42.4px;
+    }
+    
+    
+    #primer_nav ul li a{
+        text-decoration: none;
+        color: black;
+    }
+    #primer_nav ul{
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #div_de_iconos_header{
+        display: flex;
+        
+        width: 120px;
+        justify-content: center;
+    }
+    
+    #div_de_iconos_header #perfil img{
+        width: 20px;
+    }
+    
+    #perfil {
+        width: 20px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        margin-left: 40px;
+        margin-right: 0px;
+    }
+    
+    #carrito{
+        width: 20px;
+        margin: 16px 40px;
+    }
+    
+    #div_de_iconos_header #carrito img{
+        width: 20px;
+        
+    }
+   
+    #guo_circulo_rojo{
+        border: 1px solid red;
+        border-radius: 40px;
+        padding: 5px 20px;
+    }
+    
+    
+    #guo_circulo_rojo a{
+        padding: 0px;
+    }
+    
+   /*inicio_de_primer_article*/
+    
+    #primer_div_de_primer_article_contiene_foto_portada figure img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    #primer_div_de_primer_article_contiene_foto_portada{
+        background: url(img/pagina_rbg/foto_cabecera_rbg.jpg) no-repeat bottom;
+        width: 100%;
+        height: 700px;
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        background-size: cover;
+    }
+    
+    #div_azul_con_dos_p{
+        background: #003c72;
+        width: 100%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: center;
+        align-items: center;
+        position: absolute;
+        border-color: #f43627;
+    }
+    
+    #div_azul_con_dos_p p{
+        font-family: arial;
+        color: #fff;
+        
+    }
+    
+    #p_de_transformar_vidas{
+        font-size: 30px;
+        width: 1120px;
+        text-align: center;
+        
+    }
+    
+    /*final_de_primer_article*/
+    
+    /*inicio_del_segundo_article*/
+    
+    #div_inmediato_segundo_article_contiene_ps p{
+        margin: 30px auto;
+        width: 1180px;
+        font-family: arial;
+    }
+    
+    
+    
+    /*final_del_segundo_article*/
+    /*inicio_de_tercer_article*/
+    
+    #titulo_del_tercer_article{
+        background: #f3f3f3;
+        width: 100%;
+        height: 111px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #titulo_del_tercer_article p{
+        font-family: arial;
+        font-size: 25px;
+        text-transform: uppercase;
+        font-weight: 100;
+    }
+    
+    #div_de_video_sobre_mi{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+    
+    
+    #div_de_video_sobre_mi video{
+        width: 1180px;
+        height: 663.75px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    
+    
+    #div_de_ps_del_tercer_article p{
+        font-family: arial;
+        width: 1180px;
+        margin-bottom: 20px;
+    }
+    
+    #seccion_de_foto_de_camara_con_ps figure{
+        background: url(img/pagina_rbg/camara.jpg) no-repeat;
+        width: 1180px;
+        height: 663.333px;
+        margin: auto;
+        margin-top: 40px;
+        margin-bottom: 35px;
+    }
+    
+    #seccion_de_foto_de_camara_con_ps p{
+        margin-bottom: 30px;
+        font-family: arial;
+        width: 1180px;
+    }
+    
+    #seccion_de_foto_de_camara_con_ps{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    /*final_del_tercer_article*/
+    
+    
+    /*inicio_de_cuarta_seccion*/
+    
+    #primer_div_de_cuarta_seccion_contiene_titulo{
+        background: #f3f3f3;
+        height: 111px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    
+    
+    #primer_div_de_cuarta_seccion_contiene_titulo p{
+        font-family: arial;
+        text-transform: uppercase;
+        font-size: 25px;
+        font-weight: 100;
+    }
+    
+    
+    #div_de_subtitulo_cuarto_article{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+    
+    
+    #div_de_subtitulo_cuarto_article p{
+        margin-bottom: 35px;
+        font-family: arial;
+        width: 1180px;
+    }
+    
+    #div_de_foto_camara_cuarto_article{
+        display: flex;
+        justify-content: center;
+    }
+    
+    #div_de_foto_camara_cuarto_article figure{
+        background: url(img/pagina_rbg/camara_dos.jpg) no-repeat center;
+        width: 1180px;
+        height: 663.75px;
+        background-size: cover;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    
+    
+    #div_de_dos_ps_de_cuarto_article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+    
+    #div_de_dos_ps_de_cuarto_article p{
+        width: 1180px;
+        margin-bottom: 35px;
+        font-family: arial;
+        
+    }
+    /*final_de_cuarta_seccion*/
+    
+    /*inicio_del_quinto_article*/
+    
+    
+     #div_inmediato_a_quinto_article{
+        background: #f3f3f3;
+         display: flex;
+         justify-content: center;
+         align-content: center;
+         align-items: center;
+         width: 100%;
+         height: 111px;
+    }
+    
+    
+    #div_inmediato_a_quinto_article p{
+        font-family: arial;
+        text-transform: uppercase;
+        font-size: 25px;
+    }
+    
+    
+    #div_de_ps_antes_de_las_listas{
+        margin-top: 45px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
+    
+    #div_de_ps_antes_de_las_listas p{
+        font-family: arial;
+        margin-bottom: 20px;
+        width: 1180px;
+    }
+    
+    
+    #div_contiene_lista_desordenada_quinto_article{
+        width: 1200px;
+        height: 324px;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+    
+    #div_contiene_lista_desordenada_quinto_article ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    #div_contiene_lista_desordenada_quinto_article ul li{
+        font-size: 16px;
+        width: 527px;
+        margin-right: 60px;
+        list-style-type: disc;
+        font-family: "Open Sans",Sans-serif;
+    }
+    
+    
+    #div_de_figure_de_letras_chinas figure{
+        width: 1180px;
+        height: 663.6px;
+        background: url(img/pagina_rbg/letras_chinas.jpg) no-repeat;
+    }
+    
+    
+    #div_de_figure_de_letras_chinas{
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    
+    
+    #div_de_quinta_seccion_con_muchos_ps{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+    
+    #div_de_quinta_seccion_con_muchos_ps p{
+        width: 1180px;
+        font-family: arial;
+        margin-bottom: 20px;
+    }
+    
+    /*fin_del_quinto_article*/
+ 
+    
+    /*inicio_del_sexto_article*/
+    #div_que_contiene_p_de_titulo{
+        background: #f3f3f3;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        width: 100%;
+        height: 111px;
+    }
+    
+    #div_que_contiene_p_de_titulo p{
+        font-family: arial;
+        font-size: 25px;
+        text-transform: uppercase;
+    }
+    
+    
+    
+    
+    
+    #personal_uno{
+        background: url(img/pagina_rbg/personal/1.jpg) no-repeat ; 
+        background-size: contain;
+        width: 359.983px;
+        height: 258.167px;
+    }
+    
+    #personal_dos{
+        background: url(img/pagina_rbg/personal/2.jpg) no-repeat; 
+        width: 359.983px;
+        height: 258.167px;
+         background-size: contain;
+    }
+    
+    #personal_tres{
+        background: url(img/pagina_rbg/personal/3.jpg) no-repeat; 
+        width: 359.983px;
+        height: 258.167px;
+         background-size: contain;
+    }
+    
+    #personal_cuatro{
+        background: url(img/pagina_rbg/personal/4.jpg) no-repeat; 
+        width: 359.983px;
+        height: 258.167px;
+         background-size: contain;
+    }
+    
+    #personal_cinco{
+        background: url(img/pagina_rbg/personal/5.jpg) no-repeat; 
+        width: 359.983px;
+        height: 258.167px;
+         background-size: contain;
+    }
+    
+    #personal_seis{
+        background: url(img/pagina_rbg/personal/6.jpg) no-repeat; 
+        width: 359.983px;
+        height: 258.167px;
+         background-size: contain;
+    }
+    
+    
+    #personal_siete{
+        background: url(img/pagina_rbg/personal/7.jpg) no-repeat; 
+        width: 359.983px;
+        height: 258.167px;
+         background-size: contain;
+    }
+    
+    #personal_ocho{
+        background: url(img/pagina_rbg/personal/8.jpg) no-repeat; 
+        width: 359.983px;
+        height: 258.167px;
+         background-size: contain;
+    }
+    
+    #personal_nueve{
+        background: url(img/pagina_rbg/personal/9.jpg) no-repeat; 
+        width: 359.983px;
+        height: 258.167px;
+         background-size: contain;
+    }
+    
+    
+    
+    .div_que_engloba_a_los_bloques_del_equipo{
+        width: 359.983px;;
+        height: 693.167px;
+        background: #f3f3f3;
+        margin: 50px 20px 20px 0px;
+    }
+    
+    
+    
+    .div_que_engloba_a_los_bloques_del_equipo div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+    
+    
+    .titulo_de_contenido_de_personal{
+        font-family: arial;
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        
+    }
+    
+    
+    
+    .profesion_de_personal{
+        font-family: arial;
+        font-style: italic;
+        font-weight: bold;
+         margin-bottom: 15px;
+        text-align: center;
+    }
+    
+    .p_de_contnido_de_personal{
+        font-family: arial;
+        width: 299.983px;
+         margin-bottom: 15px;
+        text-align: left;
+        font-size: 16px;
+    }
+    
+    
+    .div_de_contenido_del_personal{
+        padding: 20px;
+    }
+    
+    
+    
+    #div_de_bloques_del_equipo_de_ruben{
+        display: flex;
+        flex-wrap: wrap;
+        width: 1200px;
+        justify-content: space-between;
+        margin: auto;
+    }
+    
+    
+    .segundo_p_de_personal{
+        font-family: arial;
+        width: 299.983px;
+         margin-bottom: 15px;
+        text-align: left;
+        font-size: 16px;
+    }
+    /*fin_del_sexto_article*/
+    
+    
+    /*inicio_de_septima_seccion*/
+    
+    #div_del_titulo_de_septima_seccion{
+        background: #f3f3f3;
+        width: 1005;
+        height: 147px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin-bottom: 40px;
+    }
+    
+    #div_del_titulo_de_septima_seccion p{
+        font-family: arial;
+        text-transform: uppercase;
+        width: 1180px;
+        text-align: center;
+        font-size: 26px;
+    }
+    
+    #div_de_septimo_article_con_muchos_ps{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        
+    }
+    
+    #div_de_septimo_article_con_muchos_ps p{
+        font-family: arial;
+        margin-bottom: 20px;
+        width: 1180px;
+    }
+    
+    
+    /*fin_de_septima_seccion*/
+    /*inicio_de_octavo_article*/
+    
+    
+    #div_inmediato_a_octavo_article{
+        background: #ffba1f;
+        width: 100%;
+        height: 476.7px;
+    }
+    
+    
+    #div_de_titulos_de_octavo_article{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+        color: #282828;
+    }
+    
+    #primer_titulo_octavo_article{
+        font-family: Muli,sans-serif;
+        font-size: 30px;
+        font-weight: bold;
+        margin: 30px 0 30px;
+    }
+    
+    #segundo_titulo_octavo_article{
+        font-family: 'Muli',sans-serif;
+        font-size: 30px;
+    }
+    
+    
+    #div_de_contenido_de_octavo_article{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #div_de_contenido_de_octavo_article p{
+        width: 1180px;
+        font-family: arial;
+        margin-bottom: 20px;
+    }
+    
+    /*fin_de_octavo_article*/
+    
+    
+    /*inicio_de_noveno_article*/
+    #bloques_de_noveno_article_uno{
+        width: 377px;
+        height: 465.933px;
+        background: #f3f3f3;
+    }
+    #bloques_de_noveno_article_dos{
+        width: 377px;
+        height: 465.933px;
+        background: #f3f3f3;
+    }
+    #bloques_de_noveno_article_tres{
+        width: 377px;
+        height: 465.933px;
+        background: #f3f3f3;
+    }
+    
+    
+    #bloques_de_noveno_article_uno figure{
+        background: url(img/pagina_rbg/tres_imgs/1.jpg) no-repeat;
+        width: 377px;
+        height: 377px;
+        background-size: contain;
+    }
+    
+    #bloques_de_noveno_article_dos figure{
+        background: url(img/pagina_rbg/tres_imgs/2.jpg) no-repeat;
+        width: 377px;
+        height: 377px;
+        background-size: contain;
+    }
+    #bloques_de_noveno_article_tres figure{
+        background: url(img/pagina_rbg/tres_imgs/3.jpg) no-repeat;
+        width: 377px;
+        height: 377px;
+        background-size: contain;
+    }
+    
+    #div_inmediato_a_noveno_article{
+        width: 1180px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    #noveno_article{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        margin-top: 70px;
+    }
+    
+    
+    .primera_descripcion_de_bloques{
+        font-family: arial;
+        font-weight: bold;
+        color: #282828;
+        margin-top: 20px;
+        height: 44px;
+        width: 100%;
+    }
+    .segunda_descripcion_de_bloques{
+        font-family: arial;
+        color: #adadad;
+        font-size: 12px;
+    }
+    
+    
+    #div_de_noveno_article_de_boton button{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        border-radius: 30px;
+        width: 262px;
+        height: 17px;
+        background: #ffba1f;
+        color: #282828;
+        text-align: center;
+        border-style: none;
+        margin-top: 40px;
+        padding: 25px;
+        font-size: 20px;
+        text-transform: uppercase;
+        
+    }
+    
+    /*fin_de_noveno_article*7
+    
+    
+    /*decima_seccion*/
+    
+        #div_inmediato_a_decimo_article{
+        background: #fff;
+        width: 100%;
+        height: 254px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    /*fin_de_decima_seccion*7
+</style>
+</head>
+<body>
+
+
+<header>
+    <div id="div_inmediato_al_header">
+       <a id="a_de_logo" href="index.html">
+        <figure id="logo">
+            <img src="img/logotipo.png">
+        </figure>
+        </a>
+        <nav id="primer_nav">
+            <ul id="primer_ul">
+                <li style="width: 102px">
+                    <a href="cursos.html">cursos</a>
+                </li>
+                <li  style="width: 126px">
+                    <a href="sobre_rbg.html">sobre rgb</a>
+                </li>
+                <li style="width: 152px">
+                    <a href="">contenido</a>
+                    <ul id="ul_segundo">
+                        <li style="width: 152px; margin: 0px; padding: 0px;"  >
+                            <a style="margin: 0px;padding: 10px 15px;"   href="tutoblogs.html">tutoblogs</a>
+                        </li>
+                        <li style="width: 152px; margin: 0px; padding: 0px;">
+                            <a style="margin: 0px;padding: 10px 15px;"  href="podcast.html">podcast</a>
+                        </li>
+                    </ul>
+                </li>
+                <li  style="width: 152px">
+                    <a href="">mi mochila</a>
+                    <ul id="ul_tercero">
+                        <li style="width: 209px; margin: 0px; padding: 0px;" >
+                            <a style="margin: 0px;padding: 10px 15px;"  href="">edicion</a>
+                        </li>
+                        <li style="width: 209px; margin: 0px; padding: 0px;">
+                            <a style="margin: 0px;padding: 10px 15px;" href="">camaras y drones</a>
+                        </li>
+                        <li style="width: 209px; margin: 0px; padding: 0px;">
+                            <a style="margin: 0px;padding: 10px 15px;" href="">sonido e iluminacion</a>
+                        </li>
+                        <li style="width: 209px; margin: 0px; padding: 0px;">
+                            <a style="margin: 0px;padding: 10px 15px;" href="">accesorios</a>
+                        </li>
+                    </ul>
+                </li>
+                <li style="width: 124px">
+                    <a href="">contacto</a>
+                </li>
+                <li id="guo_circulo_rojo">
+                    <a href="">guo+</a>
+                </li>
+            </ul>
+        </nav>
+        <div id="div_de_iconos_header">
+            <figure id="perfil">
+                <img src="img/perfil.png">
+            </figure>
+            <figure id="carrito">
+                <img src="img/carrito.png">
+            </figure>
+        </div>
+    </div>
+</header>
+<article id="primer_article">
+    <div id="primer_div_de_primer_article_contiene_foto_portada">
+        
+        <div id="div_azul_con_dos_p">
+            <p>
+                Lo que hacemos no va solo de hacer tutoriales y vender cursos de foto y vídeo.
+            </p>
+            <p id="p_de_transformar_vidas">
+                Va de transformar vidas, de romper límites, cambiar reglas y de llegar adonde tus miedos no te dejan
+            </p>
+        </div>
+    </div>
+</article>
+<article id="segundo_article">
+    <div id="div_inmediato_segundo_article_contiene_ps">
+        <p>
+            En la historia de RunbenGuo, los protagonistas son todas las personas que quieren ir un paso más allá en sus vidas, apostar por sí mismas y realizarse a través de lo que les apasiona. La fotografía y el vídeo.
+        </p>
+        <p>
+            Ahora mismo tenemos la suerte de estar acompañando a cientos de miles de personas, pero esto no siempre ha sido así. Por eso, me gustaría ponerte en contexto para que entiendas de dónde vengo yo, el equipo y el proyecto.
+        </p>
+        <p>
+            Habitualmente, la gente que me conoce fuera de mi entorno, lo hace gracias a la exposición o el “éxito” que he tenido con alguno de mis canales de YouTube. Sobre todo, conocen mi faceta de formador. Pero, aunque intento mostrarme siempre tal y como soy, todavía no se me ha llegado a conocer realmente. Aunque de todas formas, si nosotros podemos estar toda la vida en el camino del autoconocimiento, ¿podemos llegar a conocer a alguien definitivamente?
+        </p>
+        <p>
+            Quién es Rubén, más allá de RunbenGuo. De dónde vengo, cómo siento y pienso, cuál ha sido mi camino.
+        </p>
+        <p>
+            Contar historias puede resultar relativamente fácil, pero no tanto hacerlo de manera que te lleves un aprendizaje antes de irte a dormir. O, quién sabe, quizás la inspiración en forma de una semilla germine dentro de ti y, al cabo del tiempo, comience a dar sus frutos.
+        </p>
+        <p>
+            Mi historia está repleta de emociones, decisiones y corazonadas. Pero, sobre todo, está llena de momentos. A continuación, quiero contártela como nunca lo he hecho. A partir de ahora, abro todo mi corazón para transmitirte que cualquier cosa es posible.
+        </p>
+    </div>
+</article>
+<article id="tercer_article">
+    <div id="titulo_del_tercer_article">
+        <p>
+            Quién Soy y de dónde vengo
+        </p>
+    </div>
+    <div id="div_de_video_sobre_mi">
+        <video src="video/sobre_mi/video_sobre_mi.mp4" controls>
+            
+        </video>
+        <div id="div_de_ps_del_tercer_article">
+            <p>
+                Me llamo Rubén Jiménez y nací en 1985. Siempre he sido una persona muy emocional. Ya desde que era un niño que vivía a las afueras de Madrid, notaba que tenía ciertas inquietudes y sensibilidades que no entendía muy bien. Percibía todo lo que me rodeaba de una forma que me provocaba sensaciones muy intensas. No sabía por qué me ocurría ni tampoco qué hacer con ellas.
+            </p>
+            <p>
+                Me apabullaba la naturaleza. Su diversidad, su poder, y a la vez su delicada belleza. La pasión por el conocimiento y entendimiento de lo que nos rodea era innato en mí, sin ser aún consciente de ello.
+            </p>
+            <p>
+                Fue en uno de los viajes escolares, en medio de la naturaleza, donde precisamente surgió mi pasión por la fotografía.
+            </p>
+            <p>
+                Tenía 10 años y había llevado conmigo mi primera cámara. Una Yashika Mini compacta de carrete que me regalaron mis abuelos. Uno de esos días, me encontraba disfrutando de un increíble atardecer. Primero, comencé a sentir el sol. Poco a poco, comencé a fijarme en las lomas, en los caballos que dibujaban el campo y en el paisaje. Y finalmente, agarré la cámara y comencé a sacar fotos.
+            </p>
+            <p>
+                Y estaba deseando llegar a casa porque sabía que, al revelar las fotos, podría contemplar de nuevo aquel momento.
+            </p>
+            <p>
+                Gracias a mis abuelos y a esta “primitiva” cámara, aquél fue el comienzo de lo que soy hoy en día.
+            </p>
+        </div>
+    </div>
+    <div id="seccion_de_foto_de_camara_con_ps">
+        <figure>
+            
+        </figure>
+        <p>
+            En mis años de adolescencia, las cámaras siguieron estrechamente vinculadas a mí. No solo por las fotos, sino porque casi todos los fines de semana consistían en quedar con mi grupo de amigos y grabar sketches de humor. O, simplemente, hacer tonterías delante del objetivo y divertirnos.
+        </p>
+        <p>
+            Fue ahí cuando me empezó a picar más a fondo la curiosidad por el vídeo.
+        </p>
+        <p>
+            De hecho, aún bromeamos a veces con que él y su “futurista” cámara fueron el origen del RunbenGuo actual. ¿Verdad, Richi? Jajaja. También nos divertíamos un montón haciendo doblajes de humor de vídeos que descargábamos de Internet.
+        </p>
+    </div>
+</article>
+<article id="cuarto_article">
+    <div id="primer_div_de_cuarta_seccion_contiene_titulo">
+        <p>
+            Los “primeros” pinitos en YouTube
+        </p>
+    </div>
+    <div id="div_de_subtitulo_cuarto_article">
+        <p>
+            A medida que mi afición iba creciendo, fui invirtiendo poco a poco en cámaras mejores. Nos metimos de lleno en este mundillo, probando cosas nuevas y dejando salir toda nuestra creatividad. Por supuesto, todo lo que hacíamos era de forma totalmente instintiva y autodidacta.
+        </p>
+    </div>
+    <div id="div_de_foto_camara_cuarto_article">
+        <figure>
+            
+        </figure>
+    </div>
+    <div id="div_de_dos_ps_de_cuarto_article">
+        <p>
+            Aunque los inicios fueron siempre humildes, cada inversión era un nuevo avance. Recuerdo el olor de los líquidos revelando los carretes de la Minolta 404si, la magia del aprendizaje a velocidad del rayo con la primera reflex digital Minolta Dynx 5D, o lo fácil que lo hacíamos todo para nuestros sketches de humor con la Tz7, sin micrófono, sin luces y sin nada; todo en automático y a rodar.
+        </p>
+        <p>
+            Sinceramente, cuando pienso en el tinglado que tengo montado ahora en mi estudio con la GH5s… me da la risa
+        </p>
+    </div>
+</article>
+<article id="quinto_article">
+    <div id="div_inmediato_a_quinto_article">
+        <p>
+            Cómo, inesperadamente, nació RunbenGuo
+        </p>
+    </div>
+    <div id="div_de_ps_antes_de_las_listas">
+        <p>
+            Yo, al igual que probablemente tú y otras muchas personas, tenía mis pensamientos puestos en hacer una carrera y poder vivir de ella. Al fin y al cabo, no eran pocos los que decían que “de la cámara no se puede vivir” o que “hacer fotos no es un trabajo de verdad”.
+        </p>
+        <p>
+            La primera carrera en la que me matriculé fue la de Física. Y digo que fue la primera porque ahí descubrí que ese no era mi camino.
+        </p>
+        <p>
+            Salí de la Facultad de Física, crucé el Paraninfo (el salón de actos de la universidad) y comencé a investigar en la Facultad de Filosofía. Su ambiente y su energía especial, las letras, las preguntas y respuestas y los entresijos del cosmos y la mente fueron las musas que me hicieron quedarme allí. Abriendo todo mi ser a lo desconocido. Pasmado por saber que no sabía nada.
+        </p>
+        <p>
+            Seis años después, salí de allí licenciado.
+        </p>
+        <p>
+            Paralelamente a todo esto, yo seguía formándome por mi cuenta. Y, lejos de abandonar nuestros proyectos audiovisuales, invertíamos más tiempo y energía porque creíamos en ellos. Mi amigo Luismi y yo abrimos un nuevo canal e hicimos varios cortometrajes al puro estilo “cine de guerrilla”, con los que ganamos varios premios.
+        </p>
+        <p>
+            El canal se llama Finéfidos y puedes echarle un ojo haciendo clic aquí.
+        </p>
+        <p>
+            Además, llegamos a crear nuestra primera productora, en la que realizábamos vídeos promocionales y reportajes fotográficos para empresas, fundaciones y otros proyectos.
+        </p>
+        <p>
+            Al no poder vivir tampoco de mi carrera de Filosofía, atravesé entonces una etapa en la que me lanzaba a probar y aprender todo lo que me apetecía. Estaba abriéndome al mundo más que nunca. Te cuento algunas curiosidades que quizás no sepas sobre mí:
+        </p>
+    </div>
+    <div id="div_contiene_lista_desordenada_quinto_article">
+        <ul>
+            <li>
+                Me saqué el título más alto de inglés en la Escuela Oficial de Idiomas
+            </li>
+            <li>
+                Estudié chino durante unos 2 años
+            </li>
+            <li>
+                Me encantan los gatos. Carol y yo vivimos con Nut y Ella, dos seres adorables que nos dan todo su amor y nos enseñan cada día
+            </li>
+            <li>
+                Mi estilo de vida se basa en el minimalismo. Pienso que el interior de nuestra casa refleja el interior de nuestro cuerpo y mente
+            </li>
+            <li>
+                He viajado por distintos lugares del mundo. Descubrir nuevos paisajes, nuevas culturas y energías me engancha
+            </li>
+            <li>
+                Escribí una novela, la cual nunca he publicado, aunque puede que lo haga a través de “El Sendero de Rubén”
+            </li>
+            <li>
+                Conseguí el accésit en el concurso “¿Quieres ser crítico de cine?”. Al año siguiente, fui finalista
+            </li>
+            <li>
+                Tengo el cinturón negro de kárate. Sí, las artes marciales han estado en mi vida desde muy joven también
+            </li>
+            <li>
+                Aprendí a tocar un poco el piano y la guitarra
+            </li>
+            <li>
+                Suelo motivarme escuchando bandas sonoras (sobre todo de Thomas Newman)
+            </li>
+            <li>
+                Me metí en un grupo de batukada porque me encanta la percusión
+            </li>
+            <li>
+                 Traducía libros de texto
+            </li>
+            <li>
+                Trabajé como profesor particular de inglés, creando grupos privados de adultos. También di clases de inglés y filosofía en mi antiguo colegio…
+            </li>
+        </ul>
+    </div>
+    <div id="div_que_contiene_imagen_de_letras_chinas_y_ps">
+        <div id="div_de_figure_de_letras_chinas">
+            <figure>
+                
+            </figure>
+        </div>
+        <div id="div_de_quinta_seccion_con_muchos_ps">
+            <p>
+                En esa etapa, como puedes ver, hice de todo. El problema era que nada de lo que hacía terminaba de encajarme al 100%. O no me llenaba demasiado, o no me generaba los ingresos necesarios para poder vivir de ello plenamente.
+            </p>
+            <p>
+                Muchas de las herramientas y recursos que usaba en mis producciones las había aprendido gracias a tutoriales de YouTube. En un momento de esos de domingo por la mañana, pensé: “voy a crear un vídeo para enseñar a construir el kit de iluminación que tanto nos ha servido en nuestros trabajos”.
+            </p>
+            <p>
+                Quería devolver mi agradecimiento a YouTube, haciendo ese vídeo en español. Hasta ese momento, todo lo que encontraba estaba en inglés.
+            </p>
+            <p>
+                Grabé y edité el vídeo, lo subí a un nuevo canal de YouTube… y lo dejé ahí. No pretendía nada más con él.
+            </p>
+            <p>
+                Al poco tiempo, entré en mi cuenta de Gmail y me quedé totalmente alucinado. ¡Tenía decenas y decenas de correos que decían “Tienes un nuevo comentario en tu vídeo “Cómo construir un kit de iluminación por 30€”!
+            </p>
+            <p>
+                Un poco incrédulo todavía, fui a mi canal para comprobarlo y vi que tenía unos 6.000 suscriptores. Sin haber hecho nada más.
+            </p>
+            <p>
+                Yo no entendía por qué se habían suscrito tantas personas por un solo vídeo. ¿Casualidad? No, todo fue una causalidad.
+            </p>
+            <p>
+                Pero no solo eso, sino que siguió creciendo y creciendo. Al cabo de unos meses, comprendí que lo que me estaba ocurriendo era una señal, una especie de “misión” que debía cumplir. El resto… ya se conoce.
+            </p>
+            <p>
+                Fui invirtiendo más y más tiempo y energía en mis vídeos. A medida que recibía mis primeros ingresos, iba soltando clases y proyectos. Insistí al máximo hasta que pude dar un pequeño saltito, con el que dejé todos los trabajos y me dediqué por completo a RunbenGuo.
+            </p>
+            <p>
+                Y la cosa no quedó ahí.
+            </p>
+            <p>
+                La parte realmente mágica de RunbenGuo ha ido llegando inesperadamente, sorpresa tras sorpresa. A medida que el canal y la web iban creciendo, se me hacía cada vez más insostenible llevar yo solo toda la carga de trabajo y tareas que necesitaba.
+            </p>
+            <p>
+                Así que, primero, se incorporó una persona, luego otra, y luego otra, y otra… Se estaba gestando el equipo RunbenGuo y ninguno estábamos siendo conscientes de ello.
+            </p>
+            <p>
+                Actualmente, vivo superagradecido por todo lo que tengo y me levanto cada mañana motivado a seguir haciendo crecer este proyecto tan bonito, con casi 800.000 personas detrás. Doy gracias a la vida por traerme esta oportunidad, cuyo significado es algo que está por encima de mí, y por poner en mi camino a 10 personas increíbles que ayudan, con toda su energía y habilidades, a seguir colocando ladrillos en este gran castillo.
+            </p>
+            <p>
+                Sin ellos, sería verdaderamente imposible crecer al ritmo que lo estamos haciendo, mejorar la calidad de todos los contenidos, tener una comunicación mucho más fluida y estrecha con la Guomunidad, ofrecer la mejor experiencia de usuario posible, o generar tantas buenas ideas, como la de poder trabajar con otros creadores, o la iniciativa de plantar un árbol cada vez que alguien compra un curso en nuestra escuela.
+            </p>
+            <p>
+                Y me gustaría en este momento que conozcas a cada una de las personas que están detrás de todo lo que ves y recibes cada semana. Y además, te las voy a presentar por orden de llegada al proyecto. ¡Allá vamos!
+            </p>
+        </div>
+    </div>
+</article>
+<article id="sexto_article">
+    <div id="div_inmediato_a_sexto_article">
+        <div id="div_que_contiene_p_de_titulo">
+            <p>
+                El equipo de RunbenGuo
+            </p>
+        </div>
+    </div>
+    <div id="div_de_bloques_del_equipo_de_ruben">
+        <div class="div_que_engloba_a_los_bloques_del_equipo">
+            <figure id="personal_uno">
+                
+            </figure>
+            <div class="">
+                <p class="titulo_de_contenido_de_personal">
+                    Pablo
+                </p>
+                <p class="profesion_de_personal">
+                    El Senior Officer
+                </p>
+                <p class="p_de_contnido_de_personal">
+                    Pablo sembró la semilla del proyecto porque… ¡es mi padre! El término “Senior Officer” se lo acuñó él mismo. Se encarga de la contabilidad y de que la empresa cumpla con sus obligaciones. También alegra a los compañeros cuando ingresa las nóminas. Nos ilumina con su sabiduría y cada día nos regala una bonita foto de sus caminatas mañaneras.
+                </p>
+                <p class="segundo_p_de_personal">
+                    En nuestra última reunión presencial nos trajo un bote de su propia mermelada.
+                </p>
+            </div>
+        </div>
+        <div class="div_que_engloba_a_los_bloques_del_equipo">
+            <figure id="personal_dos">
+                
+            </figure>
+            <div class="div_de_contenido_del_personal">
+                <p class="titulo_de_contenido_de_personal">
+                    Carol
+                </p>
+                <p class="profesion_de_personal">
+                    Community manager y “guardaespaldas de Rubén”
+                </p>
+                <p class="p_de_contnido_de_personal">
+                    Carol es una de las personas más especiales de mi vida. No solo por ser mi compañera de sendero, sino también porque siempre me ha ayudado con el proyecto. Se encarga de manejar nuestras redes sociales y de responder los mensajes con su buena energía. Además, trata de mantenernos lo más a salvo posible de los piratas que navegan por la red.
+                </p>
+                <p class="segundo_p_de_personal">
+                    Siempre nos regala una enorme sonrisa, es puro amor.
+                </p>
+            </div>
+        </div>
+        <div class="div_que_engloba_a_los_bloques_del_equipo">
+            <figure id="personal_tres">
+                
+            </figure>
+            <div class="div_de_contenido_del_personal">
+                <p class="titulo_de_contenido_de_personal">
+                    Susana
+                </p>
+                <p class="profesion_de_personal">
+                    La ninja que trabaja en la sombra
+                </p>
+                <p class="p_de_contnido_de_personal">
+                    Susana es nuestra editora y se encarga de hacer magia con todos los materiales que grabo, tanto de RunbenGuo como del Sendero, ahorrándome unas cuantas horas cada día. Con ella todo es sencillo. No habla mucho en nuestro grupo de Telegram, pero ella es así. Sigilosa, precisa y una “curranta” de la leche.
+                </p>
+                <p class="segundo_p_de_personal">
+                    Da igual lo que hagamos. No hay vídeo que se le resista.
+                </p>
+            </div>
+        </div>
+        <div class="div_que_engloba_a_los_bloques_del_equipo">
+            <figure id="personal_cuatro">
+                
+            </figure>
+            <div class="div_de_contenido_del_personal">
+                <p class="titulo_de_contenido_de_personal">
+                    Manuel
+                </p>
+                <p class="profesion_de_personal">
+                    El malabarista de los números
+                </p>
+                <p class="p_de_contnido_de_personal">
+                    Manuel es nuestro rey del marketing y la publicidad. Al igual que el rey Arturo sacó la espada de la piedra, él saca lo mejor de su cerebro y lo transforma en ideas y estrategias para ser mejores. Le encanta hacer competiciones frikis con los compañeros, crear métricas y ostenta el récord de grabar los vídeos más largos en nuestros viernes de agradecimiento.
+                </p>
+                <p class="segundo_p_de_personal">
+                    Lo mismo te construye un embudo, que lo peta con sus campañas de Facebook.
+                </p>
+            </div>
+        </div>
+        <div class="div_que_engloba_a_los_bloques_del_equipo">
+            <figure id="personal_cinco">
+                
+            </figure>
+            <div class="div_de_contenido_del_personal">
+                <p class="titulo_de_contenido_de_personal">
+                    Arantxa
+                </p>
+                <p class="profesion_de_personal">
+                    El ojo que todo lo ve
+
+                </p>
+                <p class="p_de_contnido_de_personal">
+                    Arantxa es nuestra superjefa project manager, y eso quiere decir que sabe absolutamente todo lo que ocurre en Runbenguo. Se encarga de la organización del equipo, calendarizar las tareas y objetivos, fichar a nuevos profes para Guo+…
+                </p>
+                <p class="segundo_p_de_personal">
+                    A pesar de ser la más joven del equipo, desde que la vimos por primera vez supimos que es una crack y sabe un montón.
+                </p>
+                <p class="segundo_p_de_personal">
+                    Aunque vive en lo que ella denomina Mordor (País Vasco), es toda energía, luz y calor.
+                </p>
+            </div>
+        </div>
+        <div class="div_que_engloba_a_los_bloques_del_equipo">
+            <figure id="personal_seis">
+                
+            </figure>
+            <div class="div_de_contenido_del_personal">
+                <p class="titulo_de_contenido_de_personal">
+                    Eloy
+                </p>
+                <p class="profesion_de_personal">
+                   El bombero-conejo de Duracell
+
+                </p>
+                <p class="p_de_contnido_de_personal">
+                    Eloy es el que cuida nuestra web. Corrige y sanea hasta el mínimo fallo, haciendo que todo vaya sobre ruedas. Como también conoce el extraño idioma de la programación, trabaja codo con codo junto a Guille. No para en todo el día. Es una fuente inagotable de ayuda y apaga todos los fuegos que aparecen.
+                </p>
+                <p class="segundo_p_de_personal">
+                    Le encanta madrugar y si es para, como él dice, “salir a afotar” mucho mejor.
+                </p>
+                <p class="segundo_p_de_personal">
+                    Su energía dura, y dura, y dura…
+                </p>
+            </div>
+        </div>
+        <div class="div_que_engloba_a_los_bloques_del_equipo">
+            <figure id="personal_siete">
+                
+            </figure>
+            <div class="div_de_contenido_del_personal">
+                <p class="titulo_de_contenido_de_personal">
+                    Jorge
+
+                </p>
+                <p class="profesion_de_personal">
+                    El diseñador astronauta
+
+                </p>
+                <p class="p_de_contnido_de_personal">
+                    Jorge ha sido el encargado de dar vida a toda la nueva parte estética de la marca. Desde el logo, el diseño de la nueva web o las creatividades para vídeos y anuncios. Es astronauta porque, con sus diseños, ha llevado el proyecto fuera de órbita, rumbo a otra galaxia. Su relación con Arantxa hace tiempo que dejó de ser un rumor.
+                </p>
+                <p class="segundo_p_de_personal">
+                    Ellos siempre están listos para asombrar al equipo con sus sorpresas.
+                </p>
+            </div>
+        </div>
+        <div class="div_que_engloba_a_los_bloques_del_equipo">
+            <figure id="personal_ocho">
+                
+            </figure>
+            <div class="div_de_contenido_del_personal">
+                <p class="titulo_de_contenido_de_personal">
+                    Alex
+                </p>
+                <p class="profesion_de_personal">
+                    Editor con alma de juglar
+                </p>
+                <p class="p_de_contnido_de_personal">
+                    Álex fue el último en llegar y se encarga de editar junto a Susana la cada vez más ingente cantidad de materiales que voy generando. Pero, en realidad, lo que le encanta es contar historias. Ya sea en nuestros vídeos, en sus cortos de cine o incluso escribiendo. Medio equipo se enganchó a su último libro y ahora le piden el segundo.
+                </p>
+                <p class="segundo_p_de_personal">
+                    Algunos compañeros le dicen que tiene una “voz de podcast”.
+                </p>
+            </div>
+        </div>
+        <div class="div_que_engloba_a_los_bloques_del_equipo">
+            <figure id="personal_nueve">
+                
+            </figure>
+            <div class="div_de_contenido_del_personal">
+                <p class="titulo_de_contenido_de_personal">
+                    Ander
+                </p>
+                <p class="profesion_de_personal">
+                    La solución a todos tus problemas
+
+                </p>
+                <p class="p_de_contnido_de_personal">
+                    ¿Tienes problemas para acceder a tu curso? Ander te lo soluciona. ¿No sabes qué curso adquirir? Ander te da la respuesta. Y es que nuestro navarrico favorito, es la persona que te mimará si escribes algún día a nuestro correo.
+                </p>
+                <p class="segundo_p_de_personal">
+                    Además, le divierte tanto escribir que siempre está dispuesto a echarnos un cable con los textos del blog, tests de Guo+ y todo lo que incluya darle vida al teclado.
+                </p>
+            </div>
+        </div>
+        
+    </div>
+</article>
+<article id="septimo_article">
+    <div id="div_inmediato_a_septima_secicon">
+        <div id="div_del_titulo_de_septima_seccion">
+            <p>
+                PARA MÍ, SER YOUTUBER NO ES SUBIR VÍDEOS. SER YOUTUBER ES CAMBIAR
+                <br>
+                EL MUNDO A TRAVÉS DE LOS VÍDEOS
+            </p>
+        </div>
+        <div id="div_de_septimo_article_con_muchos_ps">
+            <p>
+                Con el paso de los años, me he hecho más consciente de que este proyecto no surgió para ganar reconocimiento o mucho dinero.
+            </p>
+            <p>
+                Nuestra misión es la de contribuir y mejorar la vida de los demás. Ser esa nueva puerta que necesitan para conseguir dedicarse a lo que les apasiona. Indistintamente de si es foto, vídeo, o YouTube. De si quieren trabajar por cuenta ajena o emprender.
+            </p>
+            <p>
+                Aquí quiero que encuentres el barco que abandone la cómoda orilla y te lleve a los confines de tu imaginación.
+            </p>
+            <p>
+                Por eso, lo que más me gusta hacer son contenidos que impacten positivamente la vida de los demás, como el de “Conciencia”. En ellos, intento transmitir que el medio ambiente es esencial para nosotros, y nos necesita más que nunca.
+            </p>
+            <p>
+                Que La Tierra es el único hogar que tenemos. Y, si no queremos destruir lo que hemos construido durante miles de años, tenemos que cambiar nuestra manera de relacionarnos con el planeta, con los animales y con las demás personas.
+            </p>
+            <p>
+                Y no me gustaría terminar sin cerrar el círculo.
+            </p>
+            <p>
+                Quiero aludir a un pilar que es fundamental en todo este camino. Ese pilar eres tú y la energía que aportas a este proyecto.
+            </p>
+            <p>
+                Sin ti, de verdad que esto no tendría ningún sentido. Porque yo intento aportar el máximo valor a los demás, pero, si mis contenidos no los reciben las personas adecuadas o no se valoran… este castillo se derrumbaría muy rápido.
+            </p>
+            <p>
+                Eres tú y todos los que estáis día a día conmigo los que me animáis a crear las ideas gigantes que tenemos pensadas en el equipo.
+            </p>
+            <p>
+                Si me tuviese que quedar con algo de todo lo que recibo, no tengo ninguna duda de que no sería con los resultados económicos, las visitas o los números en general. Me quedo con las decenas de mensajes, comentarios y emails diarios que recibo de gente bonita.
+            </p>
+            <p>
+                Sois quienes me hacéis entender el verdadero alcance de lo que estamos logrando. Porque, más allá de las cámaras, estamos ayudando a que cada miembro de esta gran comunidad llamada humanidad, siga caminando pasito a pasito por la dirección adecuada.
+            </p>
+        </div>
+    </div>
+</article>
+<article id="octavo_article">
+    <div id="div_inmediato_a_octavo_article">
+       <div id="div_de_titulos_de_octavo_article">
+        <p id="primer_titulo_octavo_article">
+            ¡Muchas gracias por haber llegado hasta aquí!
+        </p>
+        <p id="segundo_titulo_octavo_article">
+            Ahora… ¿qué te recomiendo hacer?
+        </p>
+        </div>
+        <div id="div_de_contenido_de_octavo_article">
+            
+        
+        <p>
+            Ya conoces prácticamente mi historia completa. Pero, ¿sabes que puedes conocerme aún más, mientras aprendes sobre foto y vídeo?
+        </p>
+        <p>
+            Realmente esta sección no estaría completa si no tuviera un objetivo final. Y mi objetivo final es que aprendas, mejores y te diviertas. Por eso, creo que te gustará mucho adentrarte en mis experiencias más enriquecedoras a través del podcast.
+        </p>
+        <p>
+            En el podcast trato de abordar todas las temáticas que me hacen avanzar en mi día a día. Tanto en el contexto profesional como en el personal. Además, es un gustazo poderme enrollar un poco más que en YouTube. Así, puedo compartir muchos más detalles, consejos y opiniones.
+        </p>
+        <p>
+            Aquí te muestro algunos de los episodios más escuchados. ¡Haz clic en el botón de abajo si quieres verlos todos!
+        </p>
+        <p>
+            ¡¡Un abrazo fuerte!!
+        </p>
+        <p>
+            Rubén.
+        </p>
+        </div>
+    </div>
+</article>
+<article id="noveno_article">
+    <div id="div_inmediato_a_noveno_article">
+        <div id="bloques_de_noveno_article_uno">
+            <figure>
+                
+            </figure>
+            <p class="primera_descripcion_de_bloques">
+                Podcast 17: Los Secretos de la Edición Fotográfica 
+            </p>
+            <p class="segunda_descripcion_de_bloques">
+                19/09/2020 No hay comentarios 
+            </p>
+        </div>
+        <div id="bloques_de_noveno_article_dos">
+            <figure>
+                
+            </figure>
+            <p class="primera_descripcion_de_bloques">
+                Podcast 16: Cómo deshacer el Síndrome del Impostor 
+            </p>
+            <p class="segunda_descripcion_de_bloques">
+                19/05/2020 18 comentarios 
+            </p>
+        </div>
+        <div id="bloques_de_noveno_article_tres">
+            <figure>
+                
+            </figure>
+            <p class="primera_descripcion_de_bloques">
+                Podcast 15: Claves de un gran portfolio 
+            </p>
+            <p class="segunda_descripcion_de_bloques">
+                 07/05/2020 9 comentarios 
+            </p>
+        </div>
+    </div>
+    <div id="div_de_noveno_article_de_boton">
+        <button>
+            Llévame al Podcast
+        </button>
+    </div>
+</article>
+<article id="div_decimo_article">
+    <div id="div_inmediato_a_decimo_article">
+        <div id="logo_y_redes">
+           <img src="img/decima_seccion/logo_footer.png">
+           <img src="img/decima_seccion/redes.JPG"> 
+        </div>
+        <div id="copyright">
+            <p>
+                Copyright © 2019 · Runbenguo · Información Legal · Política de Cookies · Condiciones de Venta · Política de Privacidad ·
+            </p>
+        </div>
+    </div>
+</article>
+</body>
+</html>

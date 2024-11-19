@@ -1,0 +1,1301 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>tutoblogs</title>
+<link rel="stylesheet" type="text/css" href="css.css"/>
+<link rel="stylesheet" type="text/css" href="iconos/iconos/styles.css"/>
+<style>
+
+    nav{
+        width: 900px;
+        height: 97.4px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    
+    ul{
+        list-style: none;
+       display: flex;
+    }
+    ul li a {
+        background: #fff;
+        color: #000;
+        text-decoration: none;
+        display: block;
+        font-family: arial;
+        text-transform: uppercase;
+        padding: 10px 15px;
+    }
+    
+    #primer_ul > li{
+        float: left;
+    }
+    
+    #ul_segundo{
+         display: flex;
+        flex-direction: column;
+    }
+    
+    #primer_ul li a:hover{
+        
+    }
+    #primer_ul {
+        width: 900px;
+        height: 97.4px;
+    }
+    
+    #primer_ul li ul{
+        display: none;
+        position: absolute;
+        min-width: 140px;
+    }
+    
+    #primer_ul li:hover > ul{
+        display: block;
+    }
+    
+    #primer_ul li ul li{
+        position: relative;
+    }
+    
+    /*fin del menu*/
+    
+
+    
+    
+     /*aqui comienza el reset css*/
+html,body,h1,h2,h3,h4,h5,h6,p,ol,ul,li,pre,code,address,form,fieldset,div,figure{
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    font-weight: normal;
+    border: none;
+   
+}
+ol{
+    margin-left: 1.4em;
+    list-style: decimal;
+}
+ul{
+    margin-left: 0;
+    list-style: none;
+}
+img{
+    border: 0;
+}
+
+/*aqui termina el reset css*/
+    
+    
+    body{
+        margin: 0;
+    }
+    
+    header{
+        width: 100%;
+        box-shadow: 0 0 10px;
+        box-shadow: 0 0 10px 0 rgba(0,0,0,.5);
+        display: flex;
+        justify-content: center;
+        z-index: 9;
+        background: #fff;
+        height: 97px;
+        position: fixed;
+    }
+    
+    #logo img{
+        width: 170px;
+        height: 42.4px;
+    }
+    #logo{
+        height: 42-4px;
+        width: 170px;
+        
+       
+    }
+    #div_inmediato_al_header{
+        width: 1200px;
+        margin: 0 auto;
+        margin-bottom: -90px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        height: 97px;
+        background: #fff;
+        z-index: 5;
+    }
+    #primer_nav ul{
+        display: flex;
+        
+        justify-content: center;
+        margin: 0;
+    }
+    #primer_nav ul li{
+        list-style: none;
+        margin-left: 0px;
+        font-family: arial;
+        text-transform: uppercase;
+    }
+    
+    #a_de_logo{
+        width: 170px;
+        height: 42.4px;
+    }
+    
+    
+    #primer_nav ul li a{
+        text-decoration: none;
+        color: black;
+    }
+    #primer_nav ul{
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #div_de_iconos_header{
+        display: flex;
+        
+        width: 120px;
+        justify-content: center;
+    }
+    
+    #div_de_iconos_header #perfil img{
+        width: 20px;
+    }
+    
+    #perfil {
+        width: 20px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        margin-left: 40px;
+        margin-right: 0px;
+    }
+    
+    #carrito{
+        width: 20px;
+        margin: 16px 40px;
+    }
+    
+    #div_de_iconos_header #carrito img{
+        width: 20px;
+        
+    }
+   
+    #guo_circulo_rojo{
+        border: 1px solid red;
+        border-radius: 40px;
+        padding: 5px 20px;
+    }
+    
+    
+    #guo_circulo_rojo a{
+        padding: 0px;
+    }
+    
+    
+    /*primer_article*/
+    
+    
+    #figure_de_primer_artticle{
+        background: url(img/tutoblogs/cabecera-1920-blog.jpg) no-repeat bottom center;
+        background-size: cover;
+        width: 100%;
+        height: 445px;
+       z-index: 7;
+    
+    }
+    
+    #div_azul_de_primer_article{
+        background: #003c72;
+        width: 100%;
+        height: 153px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        border-bottom: 3px solid red;
+    }
+    
+    
+    #priemr_p_de_primer_article{
+        font-family: arial;
+        font-size: 2em;
+        color: #fff;
+        margin-bottom: 20px;
+    }
+    
+    #segundo_p_de_primer_article{
+        font-family: arial;
+        color: #fff;
+    }
+    
+    /*fin_del_primer_article*/
+    
+    
+    /*segundo_article*/
+    
+    
+    
+    #segundo_article{
+        margin-top: 50px;
+        background: #f3f3f3;
+    }
+    
+    #div_de_select_y_buscar_de_segundo_article{
+        display: flex;
+        align-content: center;
+        align-items: center;
+        width: 1120px ;
+        height: 94px ;
+        display: flex;
+        margin: auto;
+    }
+    
+    
+    
+    #div_de_p_de_segundo_article{
+        margin-bottom: 20px;
+        width: 100%;
+        height: ;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+    
+    
+    #div_de_p_de_segundo_article p{
+        font-family: arial;
+        font-size: 1.3em;
+        color: #222;
+    }
+    
+    #buscar{
+        border
+    }
+    
+    #idv_de_select{
+        width: 708px;
+        height: 52px;
+    }
+    
+    #select{
+        border-radius: 30px;
+        border: 1px solid #999;
+        padding: 10px;
+        font-family: arial;
+        font-size: 17px;
+    }
+    
+    
+    #div_de_buscar_de_segundo_article{
+        width: 372px;
+        height: 54px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    #buscar{
+        width: 274px;
+        height: 54px;
+        border-radius: 30px;
+        border: 1px solid #999;
+        padding: 16px 30px 14px 32px;
+    }
+    
+    /*Inicio de los bloques de tres*/
+    
+    
+    #div_de_segundo_article_con_las_fotos_de_los_bloques{
+        width: 1140px;
+        height: 1715.8px;
+        padding: 10px;
+        margin: auto;
+    }
+    
+    
+    .bloques_de_tres_imagenes{
+        width: 1140px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+    
+    
+    
+    .div_de_primera_img_de_bloque_de_tres{
+        width: 353.333px;
+        height: 489.933px;
+        background: #fff;
+        box-shadow: 0 0 10px 0 rgba(0,0,0,.5);
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        
+        
+    }
+    
+    
+    .div_de_segunda_img_de_bloque_de_tres{
+        width: 353.333px;
+        height: 489.933px;
+        background: #fff;
+        box-shadow: 0 0 10px 0 rgba(0,0,0,.5);
+    }
+    
+    
+    
+    .div_de_tercera_img_de_bloque_de_tres{
+        width: 353.333px;
+        height: 489.933px;
+        background: #fff;
+        box-shadow: 0 0 10px 0 rgba(0,0,0,.5);
+    }
+    
+    
+    #primera_img_de_bloques_de_tutoblogs{
+        background: url(img/tutoblogs/bloques_de_tres/1.jpg) no-repeat;
+        width: 353.333px;
+        height: 194.333px;
+        background-size: cover;
+    }
+    
+    #segunda_img_de_bloques_de_tutoblogs{
+        background: url(img/tutoblogs/bloques_de_tres/2.jpg) no-repeat;
+        width: 353.333px;
+        height: 194.333px;
+        background-size: cover;
+    }
+    #tercera_img_de_bloques_de_tutoblogs{
+        background: url(img/tutoblogs/bloques_de_tres/3.jpg) no-repeat;
+        width: 353.333px;
+        height: 194.333px;
+        background-size: cover;
+    }
+    #cuarta_img_de_bloques_de_tutoblogs{
+        background: url(img/tutoblogs/bloques_de_tres/4.jpg) no-repeat;
+        width: 353.333px;
+        height: 194.333px;
+        background-size: cover;
+    }
+    #quinta_img_de_bloques_de_tutoblogs{
+        background: url(img/tutoblogs/bloques_de_tres/5.jpg) no-repeat;
+        width: 353.333px;
+        height: 194.333px;
+        background-size: cover;
+    }
+    #sexta_img_de_bloques_de_tutoblogs{
+        background: url(img/tutoblogs/bloques_de_tres/6.jpg) no-repeat;
+        width: 353.333px;
+        height: 194.333px;
+        background-size: cover;
+    }
+    #septima_img_de_bloques_de_tutoblogs{
+        background: url(img/tutoblogs/bloques_de_tres/7.jpg) no-repeat;
+        width: 353.333px;
+        height: 194.333px;
+        background-size: cover;
+    }
+    #octava_img_de_bloques_de_tutoblogs{
+        background: url(img/tutoblogs/bloques_de_tres/8.jpg) no-repeat;
+        width: 353.333px;
+        height: 194.333px;
+        background-size: cover;
+    }
+    #novena_img_de_bloques_de_tutoblogs{
+        background: url(img/tutoblogs/bloques_de_tres/9.jpg) no-repeat;
+        width: 353.333px;
+        height: 194.333px;
+        background-size: cover;
+    }
+    
+    
+    .primer_p_titulo{
+        font-family: arial;
+        font-size: 19px;
+        font-weight: bold;
+        background-size: contain;
+        margin-bottom: 25px;
+        color: #777;
+    }
+    
+    
+    .segundo_p_contenido{
+        font-family: arial;
+        font-size: 17px;
+        
+        color: #777;
+    }
+    
+    
+    .div_que_contiene_titulo_texto_y_comentarios{
+        width: 353.333px;
+        height: 295.6px;
+    }
+    
+    .div_de_solo_titulo_y_contenido{
+        width: 353.333px;
+        height: 209px;
+        padding: 0 30px;
+        margin-top: 40px;
+        box-sizing: border-box;
+        border-bottom: 1px solid #eaeaea;
+    }
+    
+    
+    .div_de_comentarios{
+        display: flex;
+        justify-content: flex-start;
+        align-content: center;
+        align-items: center;
+        width: 353.333px;
+       height: 46.6px;
+        padding: 15px 30px;
+        box-sizing: border-box;
+        font-family: arial;
+        color: #adadad;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    
+    /*fin de los bloques de tres*/
+    
+    /*fin_Del_segundo_article*/
+    
+    
+    /*inicio de la seccion amarilla  (tercera seccion)*/
+    
+        #div_inmediato_a_octavo_article{
+        background: #ffba1f;
+        width: 100%;
+        height: 430px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    
+    
+    #div_de_figure_octavo_article figure{
+        width: 50px;
+        height: 50px;
+        background: url(img/octava_seccion/carta.png) no-repeat;
+        margin: 16px 40px;
+    }
+    
+    
+    #div_de_texto_ocatva_seccion p{
+        text-align: center;
+        color: #282828;
+        font-family: arial;
+        margin-top: -10px;
+        margin-bottom: 16px;
+    }
+    
+    
+    
+    #div_de_titulo_octava_seccion p{
+        color: #282828;
+        font-size: 1.8em;
+        font-family: arial;
+        font-weight: bold;
+        margin: 28.8px 0;
+    }
+    
+    
+    #div_de_inputs input{
+        width: 500px;
+        height: 50px;
+        border: none;
+        font-family: arial;
+        padding-left: 18px;
+        border-radius: 100px;
+        font-size: 1.4em;
+    }
+    
+    
+    #primer_input_octava{
+        margin-right: 20px;
+    }
+    
+    
+    #checkbox_octava{
+        margin: 20px 0;
+        font-family: arial;
+    }
+    
+    
+    
+    #div_de_boton_octava button{
+        background: #282828;
+        border-radius: 100px;
+        color: #fff;
+
+        width: 450px;
+        height: 50px;
+        border: none;
+        font-family: arial;
+        font-size: 1.1em;
+    }
+    
+    #div_de_boton_octava button:hover{
+        color: #000;
+        background: #fff;
+        cursor: pointer;
+    }
+    
+    
+    
+    /*fin de la seccion amarilla    (tercera seccion) */
+    
+    
+    
+    /*inicio de la seccion amarilla oscura  (cuarta seccion)*/
+    
+    
+    #div_inmediato_a_noveno{
+        width: 100%;
+        height: 100px;
+        background: #e6a81c;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.6em;
+    }
+    
+    #div_inmediato_a_noveno p{
+        width: 1120px;
+        height: 55px;
+    }
+    
+    
+    
+    /*fin de la seccion amarilla oscura    (cuarta seccion)*/
+    
+    /*inicio de la quinta seccion*/
+    
+    #div_inmediato_a_quinto_article{
+        width: 100%;
+        height: 565px;
+    }
+    
+    
+    #figure_de_img_de_quinto_article{
+        width: 100%;
+        height: 565px;
+        background: url(img/tutoblogs/quinta_seccion/paisaje.jpg) no-repeat center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    #div_dentro_de_img_de_color_azul_transparente{
+        background: rgba( 16, 54, 111 , 0.8);
+        width: 1140px;
+        height: 445px;
+        padding: 50px;
+        box-sizing: border-box;
+        font-family: arial;
+        color: #fff;
+    }
+    
+    #div_dentro_de_img_de_color_azul_transparente p{
+        margin-bottom: 20px;
+        font-size: 17px;
+    }
+    
+    
+    #titulo_del_cuadrado_azul_transparente{
+        text-align: center;
+        font-size: 24px !important;;
+    }
+    
+    
+    /*fin de la quinta seccion*/
+    
+    /*inicio de sexta seccion*/
+    
+    
+    #div_inmediato_a_sexto_article{
+        width: 1140px;
+        height: 728px;
+        display: flex;
+        
+    }
+    
+    .div_de_secciones_iconos_de_sexto_article{
+        width: 540px;
+        height: 698px;
+        border: 2px solid #003c72;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        padding: 40px;
+        box-sizing: border-box;
+        margin: 15px;
+    }
+    
+    
+    #primer_figure_de_sexta_seccion{
+        background: url(img/tutoblogs/sexto_article/1.png) no-repeat;
+        width: 150px;
+        height: 150px;
+        margin-bottom: 40px;
+    }
+    
+    #segundo_figure_de_sexta_seccion{
+        background: url(img/tutoblogs/sexto_article/2.png) no-repeat;
+        width: 150px;
+        height: 150px;
+        margin-bottom: 40px;
+    }
+    
+    .div_con_titulo_y_texto_de_sexto_article{
+        width: 456px;
+        height: 429px;
+    }
+    
+    .div_con_titulo_y_texto_de_sexto_article p{
+        margin-bottom: 15px;
+        font-family: arial;
+        font-size: 15px;
+    }
+    
+    .p_de_solo_titulo_de_sexto_article{
+        font-size: 23px !important;
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    #sexto_article{
+        display: flex;
+        justify-content: center;
+        padding-top: 100px;
+    }
+    
+    
+    
+    /*fin de sexta seccion*/
+    
+    
+    /*footer*/
+    
+    #div_inmediato_a_decimo_article{
+        background: #fff;
+        width: 100%;
+        height: 254px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    
+    /*fin del footer*/
+    
+    
+</style>
+</head>
+<body>
+
+
+<header>
+    <div id="div_inmediato_al_header">
+       <a id="a_de_logo" href="index.html">
+        <figure id="logo">
+            <img src="img/logotipo.png">
+        </figure>
+        </a>
+        <nav id="primer_nav">
+            <ul id="primer_ul">
+                <li style="width: 102px">
+                    <a href="cursos.html">cursos</a>
+                </li>
+                <li  style="width: 126px">
+                    <a href="sobre_rbg.html">sobre rgb</a>
+                </li>
+                <li style="width: 152px">
+                    <a href="">contenido</a>
+                    <ul id="ul_segundo">
+                        <li style="width: 152px; margin: 0px; padding: 0px;"  >
+                            <a style="margin: 0px;padding: 10px 15px;"   href="tutoblogs.html">tutoblogs</a>
+                        </li>
+                        <li style="width: 152px; margin: 0px; padding: 0px;">
+                            <a style="margin: 0px;padding: 10px 15px;"  href="podcast.html">podcast</a>
+                        </li>
+                    </ul>
+                </li>
+                <li  style="width: 152px">
+                    <a href="">mi mochila</a>
+                    <ul id="ul_tercero">
+                        <li style="width: 209px; margin: 0px; padding: 0px;" >
+                            <a style="margin: 0px;padding: 10px 15px;"  href="">edicion</a>
+                        </li>
+                        <li style="width: 209px; margin: 0px; padding: 0px;">
+                            <a style="margin: 0px;padding: 10px 15px;" href="">camaras y drones</a>
+                        </li>
+                        <li style="width: 209px; margin: 0px; padding: 0px;">
+                            <a style="margin: 0px;padding: 10px 15px;" href="">sonido e iluminacion</a>
+                        </li>
+                        <li style="width: 209px; margin: 0px; padding: 0px;">
+                            <a style="margin: 0px;padding: 10px 15px;" href="">accesorios</a>
+                        </li>
+                    </ul>
+                </li>
+                <li style="width: 124px">
+                    <a href="">contacto</a>
+                </li>
+                <li id="guo_circulo_rojo">
+                    <a href="">guo+</a>
+                </li>
+            </ul>
+        </nav>
+        <div id="div_de_iconos_header">
+            <figure id="perfil">
+                <img src="img/perfil.png">
+            </figure>
+            <figure id="carrito">
+                <img src="img/carrito.png">
+            </figure>
+        </div>
+    </div>
+</header>
+
+
+<article id="primer_article">
+    <div id="div_inmediato_a_primer_article">
+        <figure id="figure_de_primer_artticle">
+            
+        </figure>
+        <div id="div_azul_de_primer_article">
+            <p id="priemr_p_de_primer_article">
+                TutoBlogs de RunbenGuo
+            </p>
+            <p id="segundo_p_de_primer_article">
+               ¿El día a día apenas te deja tiempo para sentarte enfrente del ordenador, y tu lista de vídeos pendientes es cada vez más grande? 
+            </p>
+        </div>
+    </div>
+    
+</article>
+<article id="segundo_article">
+    <div id="div_inmediato_a_segundo_article">
+        <div id="div_de_p_de_segundo_article">
+            <p>
+                Filtra por etiquetas y/o realiza una búsqueda por título
+            </p>
+        </div>
+        <div id="div_de_select_y_buscar_de_segundo_article">
+           <div id="idv_de_select">
+            <select id="select" name="select">
+                <option>
+                    Todos
+                </option>
+                <option>
+                    Fotografía (45)
+                </option>
+                <option>
+                    Material descargable (45)
+                </option>
+                <option>
+                    Video (45)
+                </option>
+                <option>
+                    Lightroom (21)
+                </option>
+                <option>
+                    Photoshop (13)
+                </option>
+                <option>
+                    Premier (13)
+                </option>
+                <option>
+                    After effects (11)
+                </option>
+                <option>
+                    Bibliotecas gratis (5)
+                </option>
+                <option>
+                    DaVinci (5)
+                </option>
+                <option>
+                    Timelapse (5)
+                </option>
+                <option>
+                    Atajos (4)
+                </option>
+                <option>
+                    Paisaje (4)
+                </option>
+                <option>
+                    10 primeros pasos (3)
+                </option>
+                <option>
+                    Hardware (3)
+                </option>
+                <option>
+                    Retrato (3)
+                </option>
+                <option>
+                    Capture One (2)
+                </option>
+                <option>
+                    Luminar (2)
+                </option>
+                <option>
+                    Móvil (2)
+                </option>
+                <option>
+                    Sonido (2)
+                </option>
+                <option>
+                    Stock (2)
+                </option>
+                <option>
+                    Adobe (1)
+                </option>
+                <option>
+                    Animaciones (1)
+                </option>
+                <option>
+                    Autopana (1)
+                </option>
+                <option>
+                    Blackmagic Pocket C.C (1)
+                </option>
+                <option>
+                    Blanco y negro(1)
+                </option>
+                <option>
+                    Iluminaci+on (1)
+                </option>
+                <option>
+                    Instagram (1)
+                </option>
+                <option>
+                    Música (1)
+                </option>
+                <option>
+                    Niebla (1)
+                </option>
+                <option>
+                    Parallax (1)
+                </option>
+                <option>
+                    Presupuesto (1)
+                </option>
+                <option>
+                    Videoclip (1)
+                </option>
+            </select>
+            </div>
+            <div id="div_de_buscar_de_segundo_article">
+                <input id="buscar" type="search" placeholder="...">
+            </div>
+        </div>
+        <div id="div_de_segundo_article_con_las_fotos_de_los_bloques">
+            <div class="bloques_de_tres_imagenes">
+                <div class="div_de_primera_img_de_bloque_de_tres">
+                    <figure id="primera_img_de_bloques_de_tutoblogs">
+                        
+                    </figure>
+                    <div class="div_que_contiene_titulo_texto_y_comentarios">
+                       <div class="div_de_solo_titulo_y_contenido">
+                           <p class="primer_p_titulo">
+                            Cómo elegir equipo para trabajar con Premiere 
+                        </p>
+                        <p class="segundo_p_contenido">
+                        
+
+A menudo nos llegan un montón de consultas técnicas donde o bien nos preguntan si el ordenador que tienen es lo suficientemente potente para usar
+
+
+
+                        </p>
+                       </div>
+                        <div class="div_de_comentarios">
+                            <p class="comentarios">
+                              9 comentarios 
+                        </p>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="div_de_segunda_img_de_bloque_de_tres">
+                    <figure id="segunda_img_de_bloques_de_tutoblogs">
+                        
+                    </figure>
+                    <div class="div_que_contiene_titulo_texto_y_comentarios">
+                       <div class="div_de_solo_titulo_y_contenido">
+                           <p class="primer_p_titulo">
+                        10 Mejores webs de foto de stock gratis para usar en tus proyectos 
+                    </p>
+                    <p class="segundo_p_contenido">
+                        
+
+  A todos nos gustaría tener miles de imágenes de alta calidad que nos sirvieran para los diversos proyectos audiovisuales que hacemos, que fueran variadas,
+
+
+
+                    </p>
+                       </div>
+                        <div class="div_de_comentarios">
+                            <p class="comentarios">
+                           5 comentarios 
+                    </p>
+                        </div>
+                    
+                    </div>
+                    
+                </div>
+                <div class="div_de_tercera_img_de_bloque_de_tres">
+                    <figure id="tercera_img_de_bloques_de_tutoblogs">
+                        
+                    </figure>
+                    <div class="div_que_contiene_titulo_texto_y_comentarios">
+                       <div class="div_de_solo_titulo_y_contenido">
+                           <p class="primer_p_titulo">
+                        Animaciones orgánicas con un par de clicks en After Effects 
+                    </p>
+                    <p class="segundo_p_contenido">
+                        
+
+
+Si solo sabes hacer animaciones básicas que no son nada estéticas, en este post te explico cómo puedes crear efectos muy visuales sin complicarte la vida.
+
+
+                    </p>
+                       </div>
+                        <div class="div_de_comentarios">
+                            <p class="comentarios">
+                          2 comentarios 
+                    </p>
+                        </div>
+                    
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="bloques_de_tres_imagenes">
+                <div class="div_de_primera_img_de_bloque_de_tres">
+                    <figure id="cuarta_img_de_bloques_de_tutoblogs">
+                        
+                    </figure>
+                    <div class="div_que_contiene_titulo_texto_y_comentarios">
+                       <div class="div_de_solo_titulo_y_contenido">
+                           <p class="primer_p_titulo">
+                        Estos son los dispositivos (ultrarrápidos) de almacenamiento que uso 
+                    </p>
+                    <p class="segundo_p_contenido">
+                        
+
+Los discos duros normales no son la mejor opción cuando trabajamos con muchísimos archivos. Estas son los 2 dispositivos (ultrarrápidos) que utilizo.
+
+                    </p>
+                       </div>
+                       <div class="div_de_comentarios">
+                           <p class="comentarios">
+                         6 comentarios 
+                    </p>
+                       </div>
+                        
+                    
+                    </div>
+                    
+                </div>
+                <div class="div_de_segunda_img_de_bloque_de_tres">
+                    <figure id="quinta_img_de_bloques_de_tutoblogs">
+                        
+                    </figure>
+                    <div class="div_que_contiene_titulo_texto_y_comentarios">
+                       <div class="div_de_solo_titulo_y_contenido">
+                           <p class="primer_p_titulo">
+                        Cómo trabajar con archivos RAW, LOG, BRAW con DaVinci 
+                    </p>
+                    <p class="segundo_p_contenido">
+                        
+
+Algo muy importante en la postproducción de vídeo es saber trabajar con códecs profesionales. Y si no sabes, en este post te enseño cómo hacerlo fácilmente.
+
+                    </p>
+                       </div>
+                        <div class="div_de_comentarios">
+                            <p class="comentarios">
+                         7 comentarios 
+                    </p>
+                        </div>
+                    
+                    </div>
+                    
+                </div>
+                <div class="div_de_tercera_img_de_bloque_de_tres">
+                    <figure id="sexta_img_de_bloques_de_tutoblogs">
+                        
+                    </figure>
+                    <div class="div_que_contiene_titulo_texto_y_comentarios">
+                       <div class="div_de_solo_titulo_y_contenido">
+                           <p class="primer_p_titulo">
+                        Aprende a editar con DaVinci en 10 pasos 
+                    </p>
+                    <p class="segundo_p_contenido">
+                        
+
+Si te acabas de pasar a DaVinci o quieres hacerlo, pero no tienes ni idea de cómo funciona el programa, aquí te enseño a editar vídeos en 10 pasos.
+
+                    </p>
+                       </div>
+                        <div class="div_de_comentarios">
+                            <p class="comentarios">
+                         5 comentarios 
+                    </p>
+                        </div>
+                    
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="bloques_de_tres_imagenes">
+                <div class="div_de_primera_img_de_bloque_de_tres">
+                    <figure id="septima_img_de_bloques_de_tutoblogs">
+                        
+                    </figure>
+                    <div class="div_que_contiene_titulo_texto_y_comentarios">
+                       <div class="div_de_solo_titulo_y_contenido">
+                           <p class="primer_p_titulo">
+                        ¿Cuál es el mejor editor de vídeo? Adobe vs. DaVinci 
+                    </p>
+                    <p class="segundo_p_contenido">
+                        
+
+Una épica “batalla” entre estos dos colosos de la edición y postproducción audiovisual. ¿Cuál es el mejor programa de edición de vídeo? Descúbrelo aquí.
+
+                    </p>
+                       </div>
+                       <div class="div_de_comentarios">
+                           <p class="comentarios">
+                         1 comentario 
+                    </p>
+                       </div>
+                        
+                    
+                    </div>
+                    
+                </div>
+                <div class="div_de_segunda_img_de_bloque_de_tres">
+                    <figure id="octava_img_de_bloques_de_tutoblogs">
+                        
+                    </figure>
+                    <div class="div_que_contiene_titulo_texto_y_comentarios">
+                       <div class="div_de_solo_titulo_y_contenido">
+                           <p class="primer_p_titulo">
+                        Los mejores 70 atajos de teclado para DaVinci Resolve 
+                    </p>
+                    <p class="segundo_p_contenido">
+                        
+
+Si sueles o quieres trabajar con DaVinci, este coloso de la postproducción audiovisual, puedes ahorrar horas de edición con estos 70 atajos de teclado.
+
+                    </p>
+                       </div>
+                       <div class="div_de_comentarios">
+                           <p class="comentarios">
+                         8 comentarios 
+                    </p>
+                       </div>
+                        
+                    
+                    </div>
+                    
+                </div>
+                <div class="div_de_tercera_img_de_bloque_de_tres">
+                    <figure id="novena_img_de_bloques_de_tutoblogs">
+                        
+                    </figure>
+                    <div class="div_que_contiene_titulo_texto_y_comentarios">
+                       <div class="div_de_solo_titulo_y_contenido">
+                           <p class="primer_p_titulo">
+                        [Guía] Cómo construir un superestudio de vídeo 
+                    </p>
+                    <p class="segundo_p_contenido">
+                        
+
+El espacio de trabajo es crucial para poder grabar y editar vídeos a gusto y ser productivo. Aquí te enseño cómo construir un estudio de vídeo profesional.
+
+                    </p>
+                       </div>
+                        <div class="div_de_comentarios">
+                            <p class="comentarios">
+                         3 comentarios 
+                    </p>
+                        </div>
+                    
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+        
+</article>
+
+
+
+<article id="octavo_article">
+    <div id="div_inmediato_a_octavo_article">
+        <div id="div_de_figure_octavo_article">
+            <figure>
+                
+            </figure>
+        </div>
+        <div id="div_de_titulo_octava_seccion">
+            <p>
+                ¿Quieres enterarte de todo lo que sucede en el universo RunbenGuo?
+            </p>
+        </div>
+        <div id="div_de_texto_ocatva_seccion">
+            <p>
+                ¿Y por qué no nos acompañas en nuestra Guomunidad?
+            </p>
+            <p>
+                Allí cada domingo todos seguimos aprendiendo sobre foto, vídeo y somos felices.
+            </p>
+        </div>
+        <div id="div_de_inputs">
+            <input placeholder="Tu nombre sin apellidos" id="primer_input_octava" type="text">
+            <input placeholder="Tu mejor email"  id="segundo_input_octava" type="text">
+        </div>
+        <div id="checkbox_octava">
+           <label>
+            <input type="checkbox">
+            Acepto la política de privacidad.* Saber más
+           </label>
+        </div>
+        <div id="div_de_boton_octava">
+            <button>
+                ¡ÚNETE A NUESTRA GUOMUNIDAD!
+            </button>
+        </div>
+    </div>
+</article>
+
+<article id="noveno_article">
+    <div id="div_inmediato_a_noveno">
+        <p>
+            *Los datos de carácter personal que nos facilites mediante este formulario serán tratados por RunbenGuo, SL, con la finalidad de enviarte nuestras publicaciones, promociones de productos y/o servicios y recursos exclusivos. Al marcar la casilla de aceptación, estás dando tu consentimiento expreso para que tus datos sean tratados conforme a las finalidades de este formulario, descritas en la política de privacidad. El hecho de no aceptarla puede tener como consecuencia el no poder atender a tu solicitud. Los datos que me facilites serán ubicados en los servidores de Active Campaign (mi proveedor de email marketing), adherido al acuerdo Privacy Shield, y cuya política de privacidad puede consultar. Podrás ejercitar los derechos de acceso, rectificación, portabilidad, supresión, limitación y oposición en info@runbenguo.com.
+        </p>
+    </div>
+</article>
+<article id="quinto_article">
+    <div id="div_inmediato_a_quinto_article">
+        <figure id="figure_de_img_de_quinto_article">
+            <div id="div_dentro_de_img_de_color_azul_transparente">
+                <p id="titulo_del_cuadrado_azul_transparente">
+                    
+                    ¿Por qué decidí abrir este TutoBlog si ya están mis vídeos en YouTube?
+
+                </p>
+                <p>
+                    Bueno, a pesar de que mi contenido siempre ha girado alrededor de los vídeos, llega un momento en el que te das cuenta de que no todo el mundo puede verlos. Incluso sigue habiendo muchos románticos que prefieren leer.
+                </p>
+                <p>
+                    Entonces, el propósito de crear este blog y compartir los mejores contenidos que ya funcionan en YouTube es ofrecer una alternativa para consumir mis tutoriales y mis reflexiones.
+                </p>
+                <p>
+                    Abrir la puerta del conocimiento a personas que aún no me conocen, pero que comparten los deseos y las inquietudes de todos nosotros: aprender todo lo posible de fotografía y vídeo para dedicarse profesional o pasionalmente a lo que les gusta.
+                </p>
+                <p>
+                    De la misma forma que quise hacer en el Podcast de RunbenGuo, quiero poner todas las facilidades del mundo a mi contenido. Al igual que tú, muchas otras personas también buscan una formación gratuita que les sirva para introducirse y dar sus primeros pasos en este apasionante mundo.
+                </p>
+                <p>
+                    Así que confío en que esta será una herramienta más para tratar de ayudarte a conseguir tus metas.
+                </p>
+            </div>
+        </figure>
+    </div>
+</article>
+
+<article id="sexto_article">
+    <div id="div_inmediato_a_sexto_article">
+        <div class="div_de_secciones_iconos_de_sexto_article">
+            <figure id="primer_figure_de_sexta_seccion">
+                
+            </figure>
+            <div class="div_con_titulo_y_texto_de_sexto_article">
+                <p class="p_de_solo_titulo_de_sexto_article">
+                    ¿Qué vas a encontrar en estos posts?
+                </p>
+                <p>
+                    Principalmente, vas a encontrar tutoriales sobre fotografía y vídeo que te ayudarán a acelerar tu crecimiento, adquirir habilidades profesionales y optimizar tu flujo de trabajo.
+                </p>
+                <p>
+                    Todos los artículos están escritos con el mismo cariño, esfuerzo y pasión que aplico en mis vídeos.
+                </p>
+                <p>
+                    Sé que muchas veces no encontramos el tiempo necesario para estar en YouTube, o no disponemos de muchos datos en nuestro móvil para ver todos los vídeos que queremos. Por eso, mi intención es compartirte lo que mejor sé hacer para que puedas aplicarlo sin necesidad de estar viendo un vídeo. Que puedas guardar el enlace y repetir los pasos las veces que quieras.
+                </p>
+                <p>
+                    ¡Ah! Casi se me olvida😅
+                </p>
+                <p>
+                    También comparto mis reflexiones personales acerca de cómo se puede vivir de la fotografía y qué estrategias podemos seguir para ganar visibilidad. Al final, el componente mental y de actitud es fundamental en cualquier cosa que queramos hacer.
+                </p>
+            </div>
+        </div>
+        <div class="div_de_secciones_iconos_de_sexto_article">
+            <figure id="segundo_figure_de_sexta_seccion">
+                
+            </figure>
+            <div class="div_con_titulo_y_texto_de_sexto_article">
+                <p class="p_de_solo_titulo_de_sexto_article">
+                    ¿Por qué te animo a leerlo?
+                </p>
+                <p>
+                    Independientemente de si te gusta más o menos la lectura, quiero que nos podamos comunicar por todas las vías posibles.
+                </p>
+                <p>
+                    Para mí, la Guomunidad es lo primero. Sin tu participación y tu ayuda, es imposible que un proyecto como este se encuentre donde está. Por eso, recibir tu feedback y tus comentarios es algo que me encanta y que necesito para que sigamos creciendo juntos.
+                </p>
+                <p>
+                    Y aquí puedes opinar, debatir y preguntarme lo que quieras.
+                </p>
+                <p>
+                    Además, es un lugar perfecto en el que compartir mis vivencias personales ligadas al mundo de la foto y el vídeo. Contarte mis mejores viajes o las increíbles personas con las que me cruzo en el camino.
+                </p>
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<article id="div_decimo_article">
+    <div id="div_inmediato_a_decimo_article">
+        <div id="logo_y_redes">
+           <img src="img/decima_seccion/logo_footer.png">
+           <img src="img/decima_seccion/redes.JPG"> 
+        </div>
+        <div id="copyright">
+            <p>
+                Copyright © 2019 · Runbenguo · Información Legal · Política de Cookies · Condiciones de Venta · Política de Privacidad ·
+            </p>
+        </div>
+    </div>
+</article>
+
+
+
+</body>
+</html>

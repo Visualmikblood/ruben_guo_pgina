@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Arte</title>
+<link rel="stylesheet" type="text/css" href="css.css"/>
+<link rel="stylesheet" type="text/css" href="iconos/iconos/styles.css"/>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    nav{
+        margin-left: 20px;
+    }
+    
+    
+    ul{
+        list-style: none;
+       display: flex;
+    }
+    ul li a {
+        background: #000;
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 15px;
+        display: block;
+    }
+    
+    #primer_ul > li{
+        float: left;
+    }
+    
+    #ul_segundo{
+         display: flex;
+        flex-direction: column;
+    }
+    
+    #primer_ul li a:hover{
+        background: #434343;
+        color: 
+    }
+    
+    #primer_ul li ul{
+        display: none;
+        position: absolute;
+        min-width: 140px;
+    }
+    
+    #primer_ul li:hover > ul{
+        display: block;
+    }
+    
+    #primer_ul li ul li{
+        position: relative;
+    }
+    
+    
+    
+</style>
+</head>
+<body>
+
+<header>
+    <div id="div_inmediato_al_header">
+       
+        <nav id="primer_nav">
+            <ul id="primer_ul">
+                <li>
+                    <a href="cursos.html">cursos</a>
+                </li>
+                <li>
+                    <a href="">sobre rgb</a>
+                </li>
+                <li>
+                    <a href="">contenido</a>
+                    <ul id="ul_segundo">
+                        <li>
+                            <a href="">hola</a>
+                        </li>
+                        <li>
+                            <a href="">adios</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">mi mochila</a>
+                </li>
+                <li>
+                    <a href="">contacto</a>
+                </li>
+                <li id="guo_circulo_rojo">
+                    <a href="">guo+</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+</body>
+</html>
+rgba( 8, 48, 109, 0.8);
